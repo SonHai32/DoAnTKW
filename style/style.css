@@ -137,10 +137,13 @@ p{
     margin-top: 20px
 }
 .menu-items{
-    margin-left : 50px;
+    margin : 0  15px;
     width: 15%;
     height: 60vh;
-    background : #061826
+    background : #061826;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
 }
 h1{
     color: #fff;
