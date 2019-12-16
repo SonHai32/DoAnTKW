@@ -64,14 +64,44 @@ p{
     width: 100%;
 }
 
-.list-items ul{
+.list-items{
     width: 100%;
-    list-style-type: none;
-    margin-left: auto;
     padding: 0;
     margin: 0;
+    height: 100%
 }
 
+.list-items li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav-item-trang-chu::before,.nav-item-san-pham::before,.nav-item-khuyen-mai::before,.nav-item-lien-he::before,.nav-item-gioi-thieu::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+    top: 100%;
+    background: #fff;  
+    z-index: 1000;
+    position: absolute;
+    transition: width .2s ease-in-out;
+}
+.nav-item-trang-chu:hover::before{
+    width: 100%;
+}
+.nav-item-san-pham:hover::before{
+    width: 100%;
+}
+.nav-item-khuyen-mai:hover::before{
+    width: 100%;
+}
+.nav-item-lien-he:hover::before{
+    width: 100%;
+}
+.nav-item-gioi-thieu:hover::before{
+    width: 100%;
+}
 .list-items ul li{
     width: 15%;
 }
@@ -160,14 +190,7 @@ i{
 .item ul li:hover{
     background: #3685B5;
 }
-@keyframes anim-spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(180deg);
-    }
-}
+
 .item i{
     transition: transform .3s ease-in-out
 }
