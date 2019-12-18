@@ -81,7 +81,7 @@ p{
     content: '';
     width: 0%;
     height: 1px;
-    top: 100%;
+    top: 99%;
     background: #fff;  
     z-index: 1000;
     position: absolute;
@@ -134,14 +134,14 @@ p{
 
 
 .main-container{
-    margin-top: 20px
+    margin-top: 20px;
+    height: 100%;
 }
 .menu-items{
     margin : 0  15px;
     width: 15%;
     height: 60vh;
     background : #061826;
-    position: -webkit-sticky;
     position: sticky;
     top: 20%;
 }
@@ -220,7 +220,6 @@ i{
 /*------------------------sale-items----------------------*/
 .sale-items{
     width: 85%;
-    height: 95vh;
 }
 .sale-header{
     background: #3685B5;
@@ -240,14 +239,22 @@ i{
 }
 .sale-item{
     width: 18%;
-    height: 95%;
+    height: 80%;
     border: 1px solid rgba(0,0,0,0.1);
 }
+.sale-item a{
+    text-align: center;
+}
 .sale-item img{
-    width: 60%;
+    width: 80%;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
 }
 
+.sale-item img:hover{
+    transform: scale(1.5);
 
+}
 
 
 
