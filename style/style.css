@@ -239,7 +239,7 @@ i{
 }
 .sale-item{
     width: 18%;
-    height: 80%;
+    height: 70%;
     border: 1px solid rgba(0,0,0,0.1);
 }
 .sale-item a{
@@ -251,10 +251,39 @@ i{
     cursor: pointer;
 }
 
-.sale-item img:hover{
-    transform: scale(1.5);
 
+.sale-item-add{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    border-top: 1px solid rgba(0,0,0,.1)
 }
 
+.sale-item-add:hover{
+    background-position: right bottom;
+    color: #000;
+}
 
-
+.sale-item-price{
+font-family: Helvetica-Light;
+font-size: 20px;
+}
+.sale-item-id{
+    font-weight: bold;
+}
+/*
+.sale-item-add:hover{
+    background-color: #fff;
+    color: #000;
+    transition: background-color     .5s ease-out  ;
+    border: 1px solid rgba(0,0,0,0.1)
+}
+*/
