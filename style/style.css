@@ -13,6 +13,9 @@ p{
     padding: 0;
     margin: 0;
 }
+.main-container{
+    padding-top: 80px;
+}
 .flex{
     display: flex;
 }
@@ -279,11 +282,47 @@ font-size: 20px;
 .sale-item-id{
     font-weight: bold;
 }
-/*
-.sale-item-add:hover{
-    background-color: #fff;
-    color: #000;
-    transition: background-color     .5s ease-out  ;
-    border: 1px solid rgba(0,0,0,0.1)
+
+
+
+/*----------------------Register---------------------*/
+.login-form{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-*/
+.form-label{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.input-form {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: .25rem;
+    height: 35px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+.gender-option{
+    width:55%;
+}
+
+.btn-submit{
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    background: #0069d9;
+    border-color: #0062cc;
+    outline: none;
+    border-radius: .25rem;
+    color: #fff;
+}
+
+.btn-submit:hover{
+    background: #005bbd;
+}
+
+
+

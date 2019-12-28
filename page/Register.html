@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Ký</title>
+  <link rel="stylesheet" href="../style/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <script src="https://kit.fontawesome.com/cb9d22c56d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    
+    <div class="header flex flex-row align-items space-between">
+      <div class="logo">
+        <span>
+          My Site
+        </span>
+      </div>
+      <div class="nav flex justify-center align-center">
+        <ul class='list-items flex flex-row list-style-none space-around align-center'>
+          <li class='nav-item-trang-chu'><a href="">Trang chủ</a></li>
+          <li class='nav-item-san-pham'><a href="">Sản phẩm</a></li>
+          <li class='nav-item-khuyen-mai'><a href="">Khuyến mãi</a></li>
+          <li class='nav-item-lien-he'><a href="">Liên hệ</a></li>
+          <li class='nav-item-gioi-thieu'><a href="">Giới thiệu</a></li>
+        </ul>
+      </div>
+      <div class="nav-items flex flex-row justify-center align-center">
+       <i class="fas fa-search"></i> 
+       <i class="far fa-user"></i>
+       <i class="fas fa-shopping-basket"></i>
+      </div> 
+    </div>
+    <div class="main-container">
+      <div class="login-form flex flex-column">
+        <p class="form-label">Họ và Tên</p>
+        <input class="input-form" onkeyup="nameChange()" id="name"  type="text"> 
+        <p class="form-label">Email</p>
+        <input class="input-form" type="email"> 
+        <p class="form-label">Mật khẩu</p>
+        <input class="input-form" type="password"> 
+        <p class="form-label">Nhập lại mật khẩu</p>
+        <input class="input-form" type="password"> 
+        <p class="form-label">Địa chỉ</p>
+        <input class="input-form" type="text"> 
+        <p class="form-label">Ngày sinh</p>
+        <input class="input-form" type="date" value="2000-01-01">
+        <div class="gender-option flex flex-row space-between align-center">
+          <p class="form-label">Giới tính</p>
+          <input type="radio" value="Nam" name="gender" checked>Nam</input>
+          <input type="radio" value="Nữ" name="gender">Nữ</input>
+          <input type="radio" value="Khác" name="gender">Khác</input>
+        </div> 
+          <div class="submit flex flex-column align-center">
+            <button class='btn-submit'>Đăng ký</button> 
+          </div>
+      </div>
+    </div>
+  </div>
+  <script charset="utf-8">
+    let name ;
+    function nameChange(){
+      name = document.getElementById("name").value;
+      console.log(name)
+    }
+  </script>
+</body>
+</html>
