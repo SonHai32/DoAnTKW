@@ -131,11 +131,107 @@ p{
 .banner{
     margin-top: 80px;
     width: 100%;
-    height: 94vh;
+    height: 75vh;
     background: #000;
 }           
 
+.sale-content {
+    margin-top: 20px;;
+    width: 50%;
+    height: 60vh;
+    background-image: url("../images/background/handbag-1478814.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: background-zoom 15s ease-in-out  infinite;
+}
 
+@keyframes background-zoom{
+    0%{
+        background-size: 100%;
+    }
+    50%{
+        background-size: 130%;
+    }
+    50%{
+        background-size: 130%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+.sale-title{
+    position: absolute;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.sale-content:hover{
+    background-size: 130%;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .6;
+}
+
+.countdown{
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+}
+
+.countdown div{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: rgba(51,51,51,0.5);
+    color: #fff;
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+.countdown div:before{
+    content: '';
+    background: #fff;
+    color: #000;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+.countdown div#day:before{
+    content: "Days";
+    line-height: 50px;
+    font-size: 22px;
+}
+.countdown div#hour:before{
+    content: "Hours";
+    line-height: 50px;
+    font-size: 22px;
+}
+.countdown div#minute:before{
+    content: "Minutes";
+    line-height: 50px;
+    font-size: 22px;
+}
+.countdown div#second:before{
+    content: "Seconds";
+    line-height: 50px;
+    font-size: 22px;
+}
 .main-container{
     margin-top: 20px;
     height: 100%;

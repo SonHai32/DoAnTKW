@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>My Site</title>
+  <script src='script/app.js' charset="utf-8">
+    
+  </script>
   <link rel="stylesheet" href="./style/style.css" type="text/css" >
   <script src="https://kit.fontawesome.com/cb9d22c56d.js" crossorigin="anonymous"></script>
 </head>
@@ -31,10 +34,21 @@
     <div class="banner">
       
     </div>
-    <div class="main-container flex flex-row">
+    <div class="sale-content flex flex-column align-center">
+      <div class="overlay"></div>
+      <div class="sale-title">
+        <h1>Thời gian khuyến mãi kết thúc vào</h1>
+      </div>
+      <div class="countdown flex flex-row justify-center">
+        <div id="day"></div>
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+      </div>
+    </div>
+    <!-- <div class="main-container flex flex-row">
       <div class="menu-items flex flex-column">
-        <h1>Menu</h1>
-        
+        <h1>Menu</h1> 
         <div class="item item-ao flex flex-row space-between">
           <a href="">Áo</a>
           <i class="fas fa-chevron-right"></i>
@@ -273,6 +287,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 </body>
 </html>
