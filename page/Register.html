@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Đăng Ký</title>
+  <script src="../script/register.js"  charset="utf-8">
+    
+  </script>
   <link rel="stylesheet" href="../style/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <script src="https://kit.fontawesome.com/cb9d22c56d.js" crossorigin="anonymous"></script>
 </head>
@@ -31,11 +34,12 @@
       </div> 
     </div>
     <div class="main-container">
-      <div class="login-form flex flex-column">
+      <div class="register-form flex flex-column">
+        <h1 class="register-title">Đăng ký</h1>
         <p class="form-label">Họ và Tên</p>
         <input class="input-form" onkeyup="nameChange()" id="name"  type="text"> 
         <p class="form-label">Email</p>
-        <input class="input-form" type="email"> 
+        <input class="input-form" onkeyup="emailChange()"  id='email'  type="email"> 
         <p class="form-label">Số điện thoại</p>
         <input class="input-form" type="number"> 
         <p class="form-label">Mật khẩu</p>
@@ -58,12 +62,6 @@
       </div>
     </div>
   </div>
-  <script charset="utf-8">
-    let name ;
-    function nameChange(){
-      name = document.getElementById("name").value;
-      console.log(name)
-    }
-  </script>
+  
 </body>
 </html>

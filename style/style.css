@@ -286,12 +286,16 @@ font-size: 20px;
 
 
 /*----------------------Register---------------------*/
-.login-form{
+.register-form{
     width: 30%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+.register-title{
+    text-align: center;
+    color:#00b3ff;
 }
 .form-label{
     font-size: 20px;
@@ -326,5 +330,10 @@ font-size: 20px;
     background: #005bbd;
 }
 
-
-
+.error{
+    border: 1px solid rgba(214,0,0,0.8);
+    border-radius: .25rem;
+    height: 35px;
+    margin: 5px 0;
+    font-size: 18px;
+}
