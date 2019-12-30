@@ -49,11 +49,31 @@ p{
 .text-center{
     text-align: center;
 }
+.text-white{
+    color: #fff;
+}
+
+.text-black{
+    color: #000;
+}
+.v-padding{
+    padding: 15px 0;
+}
+
 .list-style-none{
     list-style-type: none;
     margin-left: auto;
 }
+.img-fit{
+    width: 100%;
+}
 
+.no-padding{
+    padding: 0;
+}
+.line-through{
+    text-decoration: line-through;
+}
 .header{
     width: 100%;
     height:80px;
@@ -267,12 +287,12 @@ i{
     color: #fff
 }
 
-.item{
+.menu-items .item{
     padding: 20px 25px;
     position : relative;
 }
 
-.item a {
+.menu-items .item a {
     font-size: 18px;
     color: #fff;
     text-decoration: none;
@@ -283,7 +303,7 @@ i{
     position: absolute;
     left: 100%;
     top: 0%;
-    background: #061826;
+    background: #000;
     width: 200px;
     list-style:  none;
     display: flex;
@@ -294,16 +314,16 @@ i{
     margin: 0;
     list-style-position: outside;
 }
-.item ul li
+.menu-items .item ul li
 {
     padding: 20px 25px;
     cursor: pointer;
 }
-.item ul li a{
+.menu-items .item ul li a{
     display: block;
 }
 
-.item ul li:hover{
+.menu-items .item ul li:hover{
     background: #3685B5;
 }
 
@@ -476,22 +496,50 @@ font-size: 20px;
 
 .site-slogan{
     width: 30%;
-    height: 100
+    height: 100%
 }
 
 .site-slogan span{
     width: 50%; 
     color: #fff
-} 
+}
+
+.footer .footer-contents .product{
+    width: 30%;
+    height: 100%;
+}
+
+.footer .footer-contents .product .product-title{
+    padding-right: 120px;
+}
+ 
+.footer .footer-contents .contact{
+    width: 30%;
+    height: 100%;
+}
+
+.footer .footer-contents .site-slogan .logo ,.footer .footer-contents .product-title, .footer .footer-contents .contact-title{
+    padding-bottom: 20px;
+}
 
 
 
+.footer .footer-contents .product .product-items .item-sale .item-img{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+}
 
+.footer .footer-contents .product .product-items{
+    display: block;
+}
 
-
-
-
-
+.footer .footer-contents .product .product-items .item-sale{
+    width: 50%;
+}
+.footer .footer-contents .product .product-items .item-sale .item-info{
+    margin-left: 10px
+}
 
 
 
