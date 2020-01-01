@@ -17,6 +17,16 @@ p{
 a{
     text-decoration: none;
 }
+
+br {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
 .main-container{
     padding-top: 80px;
 }
@@ -478,6 +488,61 @@ font-size: 20px;
 }
 
 
+/*----------------- Payment-and-delivery-----------------*/
+
+.payment-and-delivery{
+    margin-top: 150px;
+    width: 100%;
+    height: 45vh;
+}
+
+.payment-and-delivery .payment{
+    width: 30%;
+    height: 100%;
+    background-color: #d8d8d8;
+}
+
+.payment-and-delivery .payment .fa-credit-card{
+    font-size: 3rem;
+    padding: 50px 50px;
+    color: #5d5d5d;
+}
+
+.payment-and-delivery .payment .payment-content {
+    padding: 10px 50px;
+}
+.payment-and-delivery .payment .payment-content h2{
+    display: inline;
+    color: #3f3f3f;
+    
+}
+.payment-and-delivery .payment .payment-content p{
+   color: #8d8d8d; 
+}
+.payment-and-delivery .payment .payment-content .payment-icon{
+    width:100%;
+}
+.payment-and-delivery .payment .payment-content .payment-icon i{
+    color: #5f5f5f;
+    font-size: 2.5rem;
+}
+
+.payment-and-delivery .delivery{
+    width: 30%;
+    height: 100%;
+    background: #d8d8d8;
+    margin: 0 20px;
+}
+.payment-and-delivery .delivery i{
+    font-size: 3rem;
+    color: #5f5f5f;
+    padding: 50px 50px;
+}
+.payment-and-delivery .delivery .delivery-content p{
+    padding: 5px 50px;
+    color: #8d8d8d;
+}
+/*-----------------End Payment-and-delivery-----------------*/
 
 /*-----------------Footer-----------------*/
 
@@ -508,7 +573,7 @@ font-size: 20px;
 }
 
 .site-slogan span{
-    width: 50%; 
+    padding: 15px 30px 
 }
 
 .footer .footer-contents .product{
