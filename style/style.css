@@ -2,9 +2,15 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 }
+
+@font-face{
+    font-family: "Quicksand";
+    src: url('../font/Quicksand/Quicksand.ttf');
+}
+
 ul {
     list-style-position: inside;
     padding-left: 0;
@@ -157,7 +163,7 @@ br {
     text-decoration: none;
     width: 100%;
     color: #fff;
-    font-family: Helvetica-Bold;
+    font-family: font-family: 'Quicksan', sans-serif;;
     font-size: 14px;
     display: block;
     overflow: hidden;
@@ -425,7 +431,6 @@ i{
 }
 
 .sale-item-price{
-font-family: Helvetica-Light;
 font-size: 20px;
 }
 .sale-item-id{

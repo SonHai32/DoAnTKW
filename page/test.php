@@ -1,11 +1,18 @@
+
+<?php 
+$mod = $_GET['mod'];
+$view = $_GET['view'];
+echo "<span>";
+print_r($mod);
+echo "/span"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>My Site</title>
   <script src='script/app.js' charset="utf-8">
-    
-  </script>
     
   </script>
   <link rel="stylesheet" href="./style/style.css" type="text/css" >

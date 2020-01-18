@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Site</title>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="../style/style.css" type="text/css" >
+  <link rel="stylesheet" href="../style/product.css" type="text/css" >
+  <script src="https://kit.fontawesome.com/cb9d22c56d.js" crossorigin="anonymous"></script>
+  <script src="../script/jquery-3.4.1.min.js"></script>
+  <script src='../script/product-render.js' charset="utf-8"></script>
+</head>
+<body>
+    <div class="header flex flex-row align-items space-between">
+      <div class="logo">
+        <span>
+          My Site
+        </span>
+      </div>
+      <div class="nav flex justify-center align-center">
+        <ul class='list-items flex flex-row list-style-none space-around align-center'>
+          <li class='nav-item-trang-chu'><a href="">Trang chủ</a></li>
+          <li class='nav-item-san-pham'><a href="">Sản phẩm</a></li>
+          <li class='nav-item-khuyen-mai'><a href="">Khuyến mãi</a></li>
+          <li class='nav-item-lien-he'><a href="">Liên hệ</a></li>
+          <li class='nav-item-gioi-thieu'><a href="">Giới thiệu</a></li>
+        </ul>
+      </div>
+      <div class="nav-items flex flex-row justify-center align-center">
+       <i class="fas fa-search"></i> 
+       <i class="far fa-user"></i>
+       <i class="fas fa-shopping-basket"></i>
+      </div> 
+    </div>
+    <div class="product-container flex flex-row align-center space-around ">
+      <div class="product-img-list flex flex-column justify-center">
+        <div class="product-img"><img key=0 class='img-fit' alt=""></div>
+        <div class="product-img"><img key=1 class='img-fit' alt=""></div>
+        <div class="product-img"><img key=2 class='img-fit'  alt=""></div>
+        <div class="product-img"><img key=3 class='img-fit'  alt=""></div>
+      </div>
+      <div class="main-product-img">
+         <img class='img-fit' alt=""/> 
+      </div>
+      <div class="product-info">
+        <h1 class='product-name text-black'></h1>
+        <div class="product-price flex flex-row">
+          <h1 class='text-black line-through' id='product-sale-price'></h1>
+          <h1 class='text-black' id='product-price'></h1>
+        </div>
+        <div class="product-color">
+          <span class="color-title">
+            MÀU SẮC
+          </span>
+          <div class="color-list-btn">
+            <button id='btn-color-1'></button>
+            <button id='btn-color-2'></button>
+          </div>
+          </div>  
+          <div class="product-amount flex flex-column">
+            <span class="product-amount-title">
+              SỐ LƯỢNG
+            </span>
+            <input type="number" value="1" id="amount"/>
+          </div>
+          <button class="add-to-card-btn">
+            THÊM VÀO GIỎ HÀNG
+          </button>
+        </div>
+      </div>
+    </div>     
+    <div class="footer">
+      <div class="designed-info text-white flex flex-row justify-center">
+        <span>Designed by </span><strong><a class='text-white ' href="https://github.com/lamsonhai1379" target="_blank"> LamSonHai</a></strong>
+      </div>
+      <div class="overlay"></div>  
+      <div class="footer-contents flex flex-row space-around align-center">
+        <div class="site-slogan flex flex-column flex-start align-center">
+          <div class="logo">
+            <h1>Logo</h1>
+          </div>
+          <span class='introduce text-gray'>BAD HABITS
+Chúng tôi, những người trẻ đam mê văn hoá đường phố, những nét văn hoá mang đầy tính bụi bặm, dựa trên những cảm xúc mà chúng tôi cảm nhận được ở Sài Gòn này, chúng tôi muốn mang đến cho những khách hàng của chúng tôi những chiếc áo mang những graphic, những câu chuyện đường phố nhất có thể.
+Đối với chúng tôi, những chiếc áo thun không đơn thuần chỉ là để mặc, mà nó còn mang cả một câu chuyện mà chúng tôi muốn mang đến cho các khách hàng. </span>
+        </div>
+        <div class="product flex flex-column flex-start  ">
+          <div class="product-title">
+              <h1>Top sale</h1>
+          </div>
+            
+<div class="product-items flex flex-column v-padding space-between">
+            <div class="items flex flex-row">
+                
+<div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="../images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding ">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+              <div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="../images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding h-padding">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+            </div>    
+          </div>
+          <div class="product-items flex flex-column space-between">
+            <div class="items flex flex-row">
+                
+<div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding h-padding">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+              <div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding h-padding">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+            </div>    
+          </div>
+        </div>
+        <div class="contact flex flex-column flex-start align-center">
+          <div class="contact-title">
+            <h1>Liên hệ</h1>
+          </div>
+          <div class="email">
+            <span class='text-white'>Email: </span>
+            <span class='text-white'>lamsonhai1379@gmail.com</span>
+          </div>
+          <div class="social">
+            <ul class="social-icon flex flex-row" > 
+              <li><a href="https://www.facebook.com/hai.lam.3726613" target='blank'><i class="fab fa-facebook-square text-gray"></i></a></li>
+              <li><a href="https://github.com/lamsonhai1379" target='blank'><i class="fab fa-github-square text-gray"></i></a></li>
+              <li><a href="https://www.instagram.com/hai.lam.3726613/" target='blank'><i class="fab fa-instagram text-gray"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
