@@ -39,6 +39,10 @@ if(ID_REGEX.test(SEARCH)){
                 return item.ID === ID;
             })
             break;
+        default:
+            window.location.href = "../page/404.html"
+            break;
+
     } 
 
 
