@@ -1,0 +1,131 @@
+{
+    BACK_PACK : [
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-01',
+            PRICE: '450.000đ',
+            SALE: true,
+            SALE_PRICE: '300.000đ',
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-02',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-03',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-04',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-05',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-06',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-07',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-08',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            ID: 'DG-09',
+            PRICE: '450.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/DG-Golden-1.webp', 
+                '../images/Products/Backpack/DG-Golden-2.webp', 
+                '../images/Products/Backpack/DG-Golden-3.webp', 
+                '../images/Products/Backpack/DG-Golden-4.webp' 
+            ]
+
+        }
+    ] 
+
+}

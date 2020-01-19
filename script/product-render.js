@@ -1,6 +1,3 @@
-const SEARCH = window.location.search.substring(1);
-const ID_REGEX = /tag\=.{1,}\&id\=.{1,}$/ ; 
-
 const PRODUCTS = {
     BACK_PACK : [
         {
@@ -18,114 +15,128 @@ const PRODUCTS = {
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            NAME: 'Degrey Backpack ss3 Hologram',
             ID: 'DG-02',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            PRICE: '650.000đ',
+            SALE: true,
+            SALE_PRICE: '450.000đ',
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/DG-holo-1.webp', 
+                '../images/Products/Backpack/DG-holo-2.webp', 
+                '../images/Products/Backpack/DG-holo-3.webp', 
+                '../images/Products/Backpack/DG-holo-4.webp' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            NAME: 'Degrey BackPack ss3',
             ID: 'DG-03',
             PRICE: '450.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/DG-vang-1.webp', 
+                '../images/Products/Backpack/DG-vang-2.webp', 
+                '../images/Products/Backpack/DG-vang-3.webp', 
+                '../images/Products/Backpack/DG-vang-4.webp' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
+            NAME: 'XOÀI CHUA BACKPACKS',
             ID: 'DG-04',
-            PRICE: '450.000đ',
+            PRICE: '690.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/DG-Xoai-Chua-1.webp', 
+                '../images/Products/Backpack/DG-Xoai-Chua-2.webp', 
+                '../images/Products/Backpack/DG-Xoai-Chua-3.webp', 
+                '../images/Products/Backpack/DG-Xoai-Chua-4.webp' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-05',
-            PRICE: '450.000đ',
+            NAME: 'Candy Land Backpack',
+            ID: 'BHBP-01',
+            PRICE: '600.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/Candy-land.webp', 
+                '../images/Products/Backpack/Candy-land-2.jpg', 
+                '../images/Products/Backpack/Candy-land-3.jpg', 
+                '../images/Products/Backpack/Candy-land-4.jpg' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-06',
-            PRICE: '450.000đ',
+            NAME: 'DANGER BACKPACK',
+            ID: 'BHBP-02',
+            PRICE: '500.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/Danger.webp', 
+                '../images/Products/Backpack/Danger-2.webp', 
+                '../images/Products/Backpack/Danger-3.webp', 
+                '../images/Products/Backpack/Danger-4.webp' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-07',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            NAME: 'BW Backpack',
+            ID: 'BHBP-03',
+            PRICE: '550.000đ',
+            SALE: true,
+            SALE_PRICE: '400.000đ',
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/dau-lau-trang-den.webp', 
+                '../images/Products/Backpack/dau-lau-trang-den-2.webp', 
+                '../images/Products/Backpack/dau-lau-trang-den-3.webp', 
+                '../images/Products/Backpack/dau-lau-trang-den-4.webp' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-08',
+            NAME: 'Fire V2 Backpack',
+            ID: 'BHBP-04',
             PRICE: '450.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/fire.webp', 
+                '../images/Products/Backpack/fire-2.webp', 
+                '../images/Products/Backpack/fire-3.webp', 
+                '../images/Products/Backpack/fire-4.webp' 
             ]
 
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-09',
-            PRICE: '450.000đ',
+            NAME: 'INSIGHT BACKPACK',
+            ID: 'BHBP-05',
+            PRICE: '500.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+                '../images/Products/Backpack/insight.webp', 
+                '../images/Products/Backpack/insight-2.webp', 
+                '../images/Products/Backpack/insigh-3.webp', 
+                '../images/Products/Backpack/insight-4.webp' 
+            ]
+
+        },
+        {
+            NAME: 'Hungry Backpack',
+            ID: 'BHBP-06',
+            PRICE: '550.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Backpack/hungry.webp', 
+                '../images/Products/Backpack/hungry-2.jpeg', 
+                '../images/Products/Backpack/hungry-3.jpeg', 
+                '../images/Products/Backpack/hungry-4.webp' 
             ]
 
         }
@@ -133,10 +144,9 @@ const PRODUCTS = {
 
 }
 
+const SEARCH = window.location.search.substring(1);
+const ID_REGEX = /tag\=.{1,}\&id\=.{1,}$/ ; 
 let CURRENT_PRODUCT;
-
-
-
 
 if(ID_REGEX.test(SEARCH)){
 
@@ -153,8 +163,7 @@ if(ID_REGEX.test(SEARCH)){
 
 
     $(document).ready( ()=> {
-        
-        if(CURRENT_PRODUCT){
+        if(CURRENT_PRODUCT.length > 0){
             $(".product-name").append(CURRENT_PRODUCT[0].NAME)
             if(CURRENT_PRODUCT[0].SALE){
                 $("#product-sale-price").append(CURRENT_PRODUCT[0].PRICE);
@@ -177,8 +186,12 @@ if(ID_REGEX.test(SEARCH)){
             for(let i = 0 ; i < 5 ; i++){
                 $(".product-img>img")[i].setAttribute("src",CURRENT_PRODUCT[0].IMG_URLS[i]); 
             }
+        }else{
+            window.location.href = "../page/404.html"
         }
     });
+}else{
+    window.location.href = "../page/404.html"
 }
 
 function changeImage(index){
