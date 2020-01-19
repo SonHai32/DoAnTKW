@@ -537,9 +537,141 @@ const PRODUCTS = {
                 '../images/Products/Trouser/pants/dc-uniform-pant-4.webp', 
             ]
         }
+    ],
+    SHORTS : [
+        {
+            NAME: 'BAD HUMAN SHORT',
+            ID: 'BHS-01',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/bad-human-black-1.webp', 
+                '../images/Products/Trouser/short/bad-human-black-2.webp', 
+                '../images/Products/Trouser/short/bad-human-black-3.jpg', 
+                '../images/Products/Trouser/short/bad-human-black-4.webp', 
+            ]
+        },
+        {
+            NAME: 'BAD HUMAN SHORT',
+            ID: 'BHS-02',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/bad-human-white-1.webp', 
+                '../images/Products/Trouser/short/bad-human-white-2.webp', 
+                '../images/Products/Trouser/short/bad-human-white-3.jpg', 
+                '../images/Products/Trouser/short/bad-human-white-4.jpg', 
+            ]
+        },
+        {
+            NAME: 'BAD HUMAN SHORT',
+            ID: 'BHS-03',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/bad-human-yellow-1.webp', 
+                '../images/Products/Trouser/short/bad-human-yellow-2.webp', 
+                '../images/Products/Trouser/short/bad-human-yellow-3.jpg', 
+                '../images/Products/Trouser/short/bad-human-yellow-4.jpg', 
+            ]
+        },
+        {
+            NAME: 'BAD SHORT',
+            ID: 'BHS-04',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/bad-yellow-1.webp', 
+                '../images/Products/Trouser/short/bad-yellow-2.webp', 
+                '../images/Products/Trouser/short/bad-yellow-3.webp', 
+                '../images/Products/Trouser/short/bad-yellow-4.webp', 
+            ]
+        },
+        {
+            NAME: 'FIRE SHORT',
+            ID: 'BHS-05',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/fire-1.webp', 
+                '../images/Products/Trouser/short/fire-2.webp', 
+                '../images/Products/Trouser/short/fire-3.webp', 
+                '../images/Products/Trouser/short/fire-4.webp', 
+            ]
+        },
+        {
+            NAME: 'RABBIT CAMO SHORT',
+            ID: 'BHS-06',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/rabbit-camo-1.webp', 
+                '../images/Products/Trouser/short/rabbit-camo-2.webp', 
+                '../images/Products/Trouser/short/rabbit-camo-3.webp', 
+                '../images/Products/Trouser/short/rabbit-camo-4.webp', 
+            ]
+        },
+        {
+            NAME: 'RABBIT CAMO SHORT',
+            ID: 'BHS-07',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/rabbit-camo-do-1.webp', 
+                '../images/Products/Trouser/short/rabbit-camo-do-2.webp', 
+                '../images/Products/Trouser/short/rabbit-camo-do-3.jpg', 
+                '../images/Products/Trouser/short/rabbit-camo-do-4.jpg', 
+            ]
+        },
+        {
+            NAME: 'RABBIT SHORT',
+            ID: 'BHS-08',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/rabbit-den-1.webp', 
+                '../images/Products/Trouser/short/rabbit-den-2.webp', 
+                '../images/Products/Trouser/short/rabbit-den-3.webp', 
+                '../images/Products/Trouser/short/rabbit-den-4.webp', 
+            ]
+        },
+        {
+            NAME: 'RABBIT SHORT',
+            ID: 'BHS-09',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/rabbit-nau-den-1.jpg', 
+                '../images/Products/Trouser/short/rabbit-nau-den-2.jpg', 
+                '../images/Products/Trouser/short/rabbit-nau-den-3.jpg', 
+                '../images/Products/Trouser/short/rabbit-nau-den-4.jpg', 
+            ]
+        },
+        {
+            NAME: 'RABBIT SHORT',
+            ID: 'BHS-10',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/short/rabbit-xam-1.webp', 
+                '../images/Products/Trouser/short/rabbit-xam-2.jpg', 
+                '../images/Products/Trouser/short/rabbit-xam-3.jpg', 
+                '../images/Products/Trouser/short/rabbit-xam-4.webp', 
+            ]
+        }
+        
     ]
     
-
 }
 console.log(JSON.stringify(PRODUCTS))
 const SEARCH = window.location.search.substring(1);
@@ -569,6 +701,11 @@ if(ID_REGEX.test(SEARCH)){
             break;
         case "PANTS":
             CURRENT_PRODUCT = PRODUCTS.PANTS.filter(function(item){
+                return item.ID === ID;
+            })
+            break;
+        case "SHORTS":
+            CURRENT_PRODUCT = PRODUCTS.SHORTS.filter(function(item){
                 return item.ID === ID;
             })
             break;
