@@ -272,11 +272,143 @@ const PRODUCTS = {
                 '../images/Products/Clothes/T-shirt/rabit-show-4.webp' 
             ]
         }
+    ],
+    HOODIE: [
+        {
+            NAME: 'BAD DRUG HOODIE',
+            ID: 'BHHD-01',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/bad-drug-1.webp', 
+                '../images/Products/Clothes/Hoodie/bad-drug-2.webp', 
+                '../images/Products/Clothes/Hoodie/bad-drug-3.webp', 
+                '../images/Products/Clothes/Hoodie/bad-drug-4.webp'
+            ]
+        },
+        {
+            NAME: 'BAD HUMAN HOODIE',
+            ID: 'BHHD-02',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/bad-human-1.webp', 
+                '../images/Products/Clothes/Hoodie/bad-human-2.webp', 
+                '../images/Products/Clothes/Hoodie/bad-human-3.webp', 
+                '../images/Products/Clothes/Hoodie/bad-human-4.webp'
+            ]
+        },
+        {
+            NAME: 'MULTI COLOUR HOODIE',
+            ID: 'BHHD-03',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/multi-colour-1.webp', 
+                '../images/Products/Clothes/Hoodie/multi-colour-2.webp', 
+                '../images/Products/Clothes/Hoodie/multi-colour-3.webp', 
+                '../images/Products/Clothes/Hoodie/multi-colour-4.webp'
+            ]
+        },
+        {
+            NAME: 'RABBIT CLOUDY HOODIE',
+            ID: 'BHHD-04',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/rabbit-cloudy-1.webp', 
+                '../images/Products/Clothes/Hoodie/rabbit-cloudy-2.webp', 
+                '../images/Products/Clothes/Hoodie/rabbit-cloudy-3.webp', 
+                '../images/Products/Clothes/Hoodie/rabbit-cloudy-4.webp'
+            ]
+        },
+        {
+            NAME: 'RABBIT GOD HOODIE',
+            ID: 'BHHD-05',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/rabbit-god-1.webp', 
+                '../images/Products/Clothes/Hoodie/rabbit-god-2.webp', 
+                '../images/Products/Clothes/Hoodie/rabbit-god-3.webp', 
+                '../images/Products/Clothes/Hoodie/rabbit-god-4.jpg'
+            ]
+        },
+        {
+            NAME: 'TRIPPY COLOUR HOODIE',
+            ID: 'BHHD-06',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/trippy-colour-1.webp', 
+                '../images/Products/Clothes/Hoodie/trippy-colour-2.webp', 
+                '../images/Products/Clothes/Hoodie/trippy-colour-3.webp', 
+                '../images/Products/Clothes/Hoodie/trippy-colour-4.webp'
+            ]
+        },
+        {
+            NAME: 'DEGREY ROCKET HOODIE',
+            ID: 'DGHD-01',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/degrey-rocket-1.webp', 
+                '../images/Products/Clothes/Hoodie/degrey-rocket-2.webp', 
+                '../images/Products/Clothes/Hoodie/degrey-rocket-3.webp', 
+                '../images/Products/Clothes/Hoodie/degrey-rocket-4.webp'
+            ]
+        },  
+        {
+            NAME: 'DEGREY ROCKET ZIP DEN HOODIE',
+            ID: 'DGHD-02',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/degrey-rocket-den-1.webp', 
+                '../images/Products/Clothes/Hoodie/degrey-rocket-den-2.webp', 
+                '../images/Products/Clothes/Hoodie/degrey-rocket-den-3.webp', 
+                '../images/Products/Clothes/Hoodie/degrey-rocket-den-4.webp'
+            ]
+        },
+        {
+            NAME: 'FAVORHOOD',
+            ID: 'DGHD-03',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/favorhood-1.webp', 
+                '../images/Products/Clothes/Hoodie/favorhood-2.webp', 
+                '../images/Products/Clothes/Hoodie/favorhood-3.webp', 
+                '../images/Products/Clothes/Hoodie/favorhood-4.webp'
+            ]
+        },
+        {
+            NAME: 'SAILOR MOON',
+            ID: 'DGHD-04',
+            PRICE: '510.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/Hoodie/sailor-moon-1.webp', 
+                '../images/Products/Clothes/Hoodie/sailor-moon-2.webp', 
+                '../images/Products/Clothes/Hoodie/sailor-moon-3.webp', 
+                '../images/Products/Clothes/Hoodie/sailor-moon-4.webp'
+            ]
+        }
     ]
     
 
 }
-
+console.log(JSON.stringify(PRODUCTS))
 const SEARCH = window.location.search.substring(1);
 const ID_REGEX = /tag\=.{1,}\&id\=.{1,}$/ ; 
 let CURRENT_PRODUCT;
@@ -296,6 +428,12 @@ if(ID_REGEX.test(SEARCH)){
             CURRENT_PRODUCT = PRODUCTS.TSHIRT.filter(function(item){
                 return item.ID === ID;
             })
+            break;
+        case "HOODIE":
+            CURRENT_PRODUCT = PRODUCTS.HOODIE.filter(function(item){
+                return item.ID === ID;
+            })
+            break;
     } 
 
 

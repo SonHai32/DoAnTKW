@@ -1,131 +1,266 @@
 {
-    BACK_PACK : [
+    "BACK_PACK": [
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-01',
-            PRICE: '450.000đ',
-            SALE: true,
-            SALE_PRICE: '300.000đ',
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "GOLDEN ROCKET BACKPACKS - GRB",
+            "ID": "DG-01",
+            "PRICE": "450.000?",
+            "SALE": true,
+            "SALE_PRICE": "300.000?",
+            "IMG_URLS": [
+                "../images/Products/Backpack/DG-Golden-1.webp",
+                "../images/Products/Backpack/DG-Golden-2.webp",
+                "../images/Products/Backpack/DG-Golden-3.webp",
+                "../images/Products/Backpack/DG-Golden-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-02',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "Degrey Backpack ss3 Hologram",
+            "ID": "DG-02",
+            "PRICE": "650.000?",
+            "SALE": true,
+            "SALE_PRICE": "450.000?",
+            "IMG_URLS": [
+                "../images/Products/Backpack/DG-holo-1.webp",
+                "../images/Products/Backpack/DG-holo-2.webp",
+                "../images/Products/Backpack/DG-holo-3.webp",
+                "../images/Products/Backpack/DG-holo-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-03',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "Degrey BackPack ss3",
+            "ID": "DG-03",
+            "PRICE": "450.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/DG-vang-1.webp",
+                "../images/Products/Backpack/DG-vang-2.webp",
+                "../images/Products/Backpack/DG-vang-3.webp",
+                "../images/Products/Backpack/DG-vang-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-04',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "XO�I CHUA BACKPACKS",
+            "ID": "DG-04",
+            "PRICE": "690.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/DG-Xoai-Chua-1.webp",
+                "../images/Products/Backpack/DG-Xoai-Chua-2.webp",
+                "../images/Products/Backpack/DG-Xoai-Chua-3.webp",
+                "../images/Products/Backpack/DG-Xoai-Chua-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-05',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "Candy Land Backpack",
+            "ID": "BHBP-01",
+            "PRICE": "600.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/Candy-land.webp",
+                "../images/Products/Backpack/Candy-land-2.jpg",
+                "../images/Products/Backpack/Candy-land-3.jpg",
+                "../images/Products/Backpack/Candy-land-4.jpg"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-06',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "DANGER BACKPACK",
+            "ID": "BHBP-02",
+            "PRICE": "500.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/Danger.webp",
+                "../images/Products/Backpack/Danger-2.webp",
+                "../images/Products/Backpack/Danger-3.webp",
+                "../images/Products/Backpack/Danger-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-07',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "BW Backpack",
+            "ID": "BHBP-03",
+            "PRICE": "550.000?",
+            "SALE": true,
+            "SALE_PRICE": "400.000?",
+            "IMG_URLS": [
+                "../images/Products/Backpack/dau-lau-trang-den.webp",
+                "../images/Products/Backpack/dau-lau-trang-den-2.webp",
+                "../images/Products/Backpack/dau-lau-trang-den-3.webp",
+                "../images/Products/Backpack/dau-lau-trang-den-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-08',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "Fire V2 Backpack",
+            "ID": "BHBP-04",
+            "PRICE": "450.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/fire.webp",
+                "../images/Products/Backpack/fire-2.webp",
+                "../images/Products/Backpack/fire-3.webp",
+                "../images/Products/Backpack/fire-4.webp"
             ]
-
         },
         {
-            NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
-            ID: 'DG-09',
-            PRICE: '450.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
-            IMG_URLS: [
-                '../images/Products/Backpack/DG-Golden-1.webp', 
-                '../images/Products/Backpack/DG-Golden-2.webp', 
-                '../images/Products/Backpack/DG-Golden-3.webp', 
-                '../images/Products/Backpack/DG-Golden-4.webp' 
+            "NAME": "INSIGHT BACKPACK",
+            "ID": "BHBP-05",
+            "PRICE": "500.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/insight.webp",
+                "../images/Products/Backpack/insight-2.webp",
+                "../images/Products/Backpack/insigh-3.webp",
+                "../images/Products/Backpack/insight-4.webp"
             ]
-
+        },
+        {
+            "NAME": "Hungry Backpack",
+            "ID": "BHBP-06",
+            "PRICE": "550.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Backpack/hungry.webp",
+                "../images/Products/Backpack/hungry-2.jpeg",
+                "../images/Products/Backpack/hungry-3.jpeg",
+                "../images/Products/Backpack/hungry-4.webp"
+            ]
         }
-    ] 
-
+    ],
+    "TSHIRT": [
+        {
+            "NAME": "ANGRY JUNGLE TEE",
+            "ID": "BHTS-01",
+            "PRICE": "350.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/angry-jungle-1.webp",
+                "../images/Products/Clothes/T-shirt/angry-jungle-2.webp",
+                "../images/Products/Clothes/T-shirt/angry-jungle-3.webp",
+                "../images/Products/Clothes/T-shirt/angry-jungle-4.webp"
+            ]
+        },
+        {
+            "NAME": "BAD DRUG TEE",
+            "ID": "BHTS-02",
+            "PRICE": "350.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/bad-drug-1.webp",
+                "../images/Products/Clothes/T-shirt/bad-drug-2.webp",
+                "../images/Products/Clothes/T-shirt/bad-drug-3.webp",
+                "../images/Products/Clothes/T-shirt/bad-drug-4.webp"
+            ]
+        },
+        {
+            "NAME": "BAD FUNKY",
+            "ID": "BHTS-03",
+            "PRICE": "400.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/bad-funky-1.webp",
+                "../images/Products/Clothes/T-shirt/bad-funky-2.webp",
+                "../images/Products/Clothes/T-shirt/bad-funky-3.webp",
+                "../images/Products/Clothes/T-shirt/bad-funky-4.webp"
+            ]
+        },
+        {
+            "NAME": "BAD PARADISE",
+            "ID": "BHTS-04",
+            "PRICE": "315.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/bad-paradise-1.webp",
+                "../images/Products/Clothes/T-shirt/bad-paradise-2.webp",
+                "../images/Products/Clothes/T-shirt/bad-paradise-3.webp",
+                "../images/Products/Clothes/T-shirt/bad-paradise-4.webp"
+            ]
+        },
+        {
+            "NAME": "CANDY LAND TEE",
+            "ID": "BHTS-05",
+            "PRICE": "315.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/candy-land-1.webp",
+                "../images/Products/Clothes/T-shirt/candy-land-2.webp",
+                "../images/Products/Clothes/T-shirt/candy-land-3.webp",
+                "../images/Products/Clothes/T-shirt/candy-land-4.webp"
+            ]
+        },
+        {
+            "NAME": "CHERRY BLOSSOM",
+            "ID": "BHTS-06",
+            "PRICE": "325.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/cherry-blossom-1.webp",
+                "../images/Products/Clothes/T-shirt/cherry-blossom-2.webp",
+                "../images/Products/Clothes/T-shirt/cherry-blossom-3.webp",
+                "../images/Products/Clothes/T-shirt/cherry-blossom-4.webp"
+            ]
+        },
+        {
+            "NAME": "NO COLOUR TEE",
+            "ID": "BHTS-07",
+            "PRICE": "325.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/no-colour-1.webp",
+                "../images/Products/Clothes/T-shirt/no-colour-2.webp",
+                "../images/Products/Clothes/T-shirt/no-colour-3.webp",
+                "../images/Products/Clothes/T-shirt/no-colour-4.webp"
+            ]
+        },
+        {
+            "NAME": "RABBIT KING TEE",
+            "ID": "BHTS-08",
+            "PRICE": "310.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/rabbit-king-1.webp",
+                "../images/Products/Clothes/T-shirt/rabbit-king-2.webp",
+                "../images/Products/Clothes/T-shirt/rabbit-king-3.webp",
+                "../images/Products/Clothes/T-shirt/rabbit-king-4.webp"
+            ]
+        },
+        {
+            "NAME": "RABBIT HOMIE TEE",
+            "ID": "BHTS-09",
+            "PRICE": "310.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/rabit-homie-1.webp",
+                "../images/Products/Clothes/T-shirt/rabit-homie-2.webp",
+                "../images/Products/Clothes/T-shirt/rabit-homie-3.webp",
+                "../images/Products/Clothes/T-shirt/rabit-homie-4.webp"
+            ]
+        },
+        {
+            "NAME": "RABBIT SHOW TEE",
+            "ID": "BHTS-10",
+            "PRICE": "310.000?",
+            "SALE": false,
+            "SALE_PRICE": 0,
+            "IMG_URLS": [
+                "../images/Products/Clothes/T-shirt/rabit-show-1.webp",
+                "../images/Products/Clothes/T-shirt/rabit-show-2.webp",
+                "../images/Products/Clothes/T-shirt/rabit-show-3.webp",
+                "../images/Products/Clothes/T-shirt/rabit-show-4.webp"
+            ]
+        }
+    ]
 }
