@@ -140,7 +140,140 @@ const PRODUCTS = {
             ]
 
         }
-    ] 
+    ],
+    TSHIRT: [
+        {
+            NAME: 'ANGRY JUNGLE TEE',
+            ID: 'BHTS-01',
+            PRICE: '350.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/angry-jungle-1.webp', 
+                '../images/Products/Clothes/T-shirt/angry-jungle-2.webp', 
+                '../images/Products/Clothes/T-shirt/angry-jungle-3.webp', 
+                '../images/Products/Clothes/T-shirt/angry-jungle-4.webp' 
+            ]
+        },
+        {
+            NAME: 'BAD DRUG TEE',
+            ID: 'BHTS-02',
+            PRICE: '350.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/bad-drug-1.webp', 
+                '../images/Products/Clothes/T-shirt/bad-drug-2.webp', 
+                '../images/Products/Clothes/T-shirt/bad-drug-3.webp', 
+                '../images/Products/Clothes/T-shirt/bad-drug-4.webp' 
+            ]
+        },
+        {
+            NAME: 'BAD FUNKY',
+            ID: 'BHTS-03',
+            PRICE: '400.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/bad-funky-1.webp', 
+                '../images/Products/Clothes/T-shirt/bad-funky-2.webp', 
+                '../images/Products/Clothes/T-shirt/bad-funky-3.webp', 
+                '../images/Products/Clothes/T-shirt/bad-funky-4.webp' 
+            ]
+        },
+        {
+            NAME: 'BAD PARADISE',
+            ID: 'BHTS-04',
+            PRICE: '315.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/bad-paradise-1.webp', 
+                '../images/Products/Clothes/T-shirt/bad-paradise-2.webp', 
+                '../images/Products/Clothes/T-shirt/bad-paradise-3.webp', 
+                '../images/Products/Clothes/T-shirt/bad-paradise-4.webp' 
+            ]
+        },
+        {
+            NAME: 'CANDY LAND TEE',
+            ID: 'BHTS-05',
+            PRICE: '315.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/candy-land-1.webp', 
+                '../images/Products/Clothes/T-shirt/candy-land-2.webp', 
+                '../images/Products/Clothes/T-shirt/candy-land-3.webp', 
+                '../images/Products/Clothes/T-shirt/candy-land-4.webp' 
+            ]
+        },
+        {
+            NAME: 'CHERRY BLOSSOM',
+            ID: 'BHTS-06',
+            PRICE: '325.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/cherry-blossom-1.webp', 
+                '../images/Products/Clothes/T-shirt/cherry-blossom-2.webp', 
+                '../images/Products/Clothes/T-shirt/cherry-blossom-3.webp', 
+                '../images/Products/Clothes/T-shirt/cherry-blossom-4.webp' 
+            ]
+        },
+        {
+            NAME: 'NO COLOUR TEE',
+            ID: 'BHTS-07',
+            PRICE: '325.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/no-colour-1.webp', 
+                '../images/Products/Clothes/T-shirt/no-colour-2.webp', 
+                '../images/Products/Clothes/T-shirt/no-colour-3.webp', 
+                '../images/Products/Clothes/T-shirt/no-colour-4.webp' 
+            ]
+        },
+        {
+            NAME: 'RABBIT KING TEE',
+            ID: 'BHTS-08',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/rabbit-king-1.webp', 
+                '../images/Products/Clothes/T-shirt/rabbit-king-2.webp', 
+                '../images/Products/Clothes/T-shirt/rabbit-king-3.webp', 
+                '../images/Products/Clothes/T-shirt/rabbit-king-4.webp' 
+            ]
+        },
+        {
+            NAME: 'RABBIT HOMIE TEE',
+            ID: 'BHTS-09',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/rabit-homie-1.webp', 
+                '../images/Products/Clothes/T-shirt/rabit-homie-2.webp', 
+                '../images/Products/Clothes/T-shirt/rabit-homie-3.webp', 
+                '../images/Products/Clothes/T-shirt/rabit-homie-4.webp' 
+            ]
+        },
+        {
+            NAME: 'RABBIT SHOW TEE',
+            ID: 'BHTS-10',
+            PRICE: '310.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Clothes/T-shirt/rabit-show-1.webp', 
+                '../images/Products/Clothes/T-shirt/rabit-show-2.webp', 
+                '../images/Products/Clothes/T-shirt/rabit-show-3.webp', 
+                '../images/Products/Clothes/T-shirt/rabit-show-4.webp' 
+            ]
+        }
+    ]
+    
 
 }
 
@@ -159,6 +292,10 @@ if(ID_REGEX.test(SEARCH)){
                 return item.ID === ID;
             });
             break;
+        case "TSHIRT":
+            CURRENT_PRODUCT = PRODUCTS.TSHIRT.filter(function(item){
+                return item.ID === ID;
+            })
     } 
 
 
@@ -179,7 +316,6 @@ if(ID_REGEX.test(SEARCH)){
             
             $('.main-product-img>img').attr('src',CURRENT_PRODUCT[0].IMG_URLS[0]);
             $('.product-img').on('click', (event) =>{
-                console.log(event.target.getAttribute('key'))
                 changeImage(event.target.getAttribute('key'))
             })
 
