@@ -404,6 +404,139 @@ const PRODUCTS = {
                 '../images/Products/Clothes/Hoodie/sailor-moon-4.webp'
             ]
         }
+    ],
+    PANTS: [
+        {
+            NAME: 'BAD LINE',
+            ID: 'BHP-01',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/bad-line-1.webp', 
+                '../images/Products/Trouser/pants/bad-line-2.webp', 
+                '../images/Products/Trouser/pants/bad-line-3.webp', 
+                '../images/Products/Trouser/pants/bad-line-4.webp' 
+            ]
+        },
+        {
+            NAME: 'BH CARGO',
+            ID: 'BHP-02',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/cargo-1.webp', 
+                '../images/Products/Trouser/pants/cargo-2.webp', 
+                '../images/Products/Trouser/pants/cargo-3.webp', 
+                '../images/Products/Trouser/pants/cargo-4.webp', 
+            ]
+        },
+        {
+            NAME: 'BH CARGO VÀNG',
+            ID: 'BHP-03',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/cargo-vang-1.webp', 
+                '../images/Products/Trouser/pants/cargo-vang-2.webp', 
+                '../images/Products/Trouser/pants/cargo-vang-3.webp', 
+                '../images/Products/Trouser/pants/cargo-vang-4.webp', 
+            ]
+        },
+        {
+            NAME: 'BH CARGO XÁM',
+            ID: 'BHP-04',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/cargo-xam-1.webp', 
+                '../images/Products/Trouser/pants/cargo-xam-2.webp', 
+                '../images/Products/Trouser/pants/cargo-xam-3.webp', 
+                '../images/Products/Trouser/pants/cargo-xam-4.webp', 
+            ]
+        },
+        
+        {
+            NAME: 'BH LINE SWEATPANTS CAM',
+            ID: 'BHP-05',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/line-sweatpan-cam-1.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-cam-2.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-cam-3.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-cam-4.webp', 
+            ]
+        },
+        {
+            NAME: 'BH LINE SWEATPANTS ĐỎ',
+            ID: 'BHP-06',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/line-sweatpan-do-1.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-do-2.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-do-3.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-do-4.webp', 
+            ]
+        },
+        {
+            NAME: 'BH LINE SWEATPANTS NÂU',
+            ID: 'BHP-07',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/line-sweatpan-nau-1.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-nau-2.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-nau-3.webp', 
+                '../images/Products/Trouser/pants/line-sweatpan-nau-4.webp', 
+            ]
+        },
+        {
+            NAME: 'DC CARGO PANTS',
+            ID: 'DCP-01',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/dc-cargo-pant-1.webp', 
+                '../images/Products/Trouser/pants/dc-cargo-pant-2.webp', 
+                '../images/Products/Trouser/pants/dc-cargo-pant-3.webp', 
+                '../images/Products/Trouser/pants/dc-cargo-pant-4.webp', 
+            ]
+        },
+        {
+            NAME: 'DC SHINE PANTS',
+            ID: 'DCP-02',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/dc-shine-pant-1.png', 
+                '../images/Products/Trouser/pants/dc-shine-pant-2.png', 
+                '../images/Products/Trouser/pants/dc-shine-pant-3.webp', 
+                '../images/Products/Trouser/pants/dc-shine-pant-4.webp', 
+            ]
+        },
+        {
+            NAME: 'DC UNIFORM PANTS',
+            ID: 'DCP-03',
+            PRICE: '410.000đ',
+            SALE: false,
+            SALE_PRICE: 0,
+            IMG_URLS: [
+                '../images/Products/Trouser/pants/dc-uniform-pant-1.png', 
+                '../images/Products/Trouser/pants/dc-uniform-pant-2.png', 
+                '../images/Products/Trouser/pants/dc-uniform-pant-3.png', 
+                '../images/Products/Trouser/pants/dc-uniform-pant-4.webp', 
+            ]
+        }
     ]
     
 
@@ -431,6 +564,11 @@ if(ID_REGEX.test(SEARCH)){
             break;
         case "HOODIE":
             CURRENT_PRODUCT = PRODUCTS.HOODIE.filter(function(item){
+                return item.ID === ID;
+            })
+            break;
+        case "PANTS":
+            CURRENT_PRODUCT = PRODUCTS.PANTS.filter(function(item){
                 return item.ID === ID;
             })
             break;
