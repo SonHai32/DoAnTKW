@@ -670,8 +670,7 @@ const PRODUCTS = {
             ]
         }
         
-    ]
-    
+    ] 
 }
 console.log(JSON.stringify(PRODUCTS))
 const SEARCH = window.location.search.substring(1);
