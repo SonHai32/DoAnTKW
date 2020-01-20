@@ -55,9 +55,20 @@ if(ID_REGEX.test(SEARCH)){
             }
 
 
-            if(CURRENT_PRODUCT[0].COLOR === undefined){
-                $(".product-color").hide();
+            if(CURRENT_PRODUCT[0].SIZE === undefined){
+                $(".product-size").hide();
+            }else{
+                CURRENT_PRODUCT[0].SIZE.forEach(function(size){
+                    $(".size-list-btn").append(`<button id=${size} >${size}</button>`);
+                })
+
+                $('.size-list-btn>button').on('click',(event) =>{
+                    changeSize(event.target.id)
+                })
+
             }
+
+
             
             $('.main-product-img>img').attr('src',CURRENT_PRODUCT[0].IMG_URLS[0]);
             $('.product-img').on('click', (event) =>{
@@ -81,6 +92,17 @@ function changeImage(index){
     })
 }
 
+function changeSize(size){
+    $(document).ready(() =>{
+        $(`#${size}`).css("background","red")
+        let anotherSize = CURRENT_PRODUCT[0].SIZE.filter(SIZE =>{
+            return SIZE != size;
+        })
+        anotherSize.forEach(size =>{
+            $(`#${size}`).css("background","#fff");
+        })
+    })
+}
 
     
 
