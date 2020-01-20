@@ -1,8 +1,6 @@
-import PRODUCTS from "../script/ProductList.js"
 const SEARCH = window.location.search.substring(1);
 const ID_REGEX = /tag\=.{1,}\&id\=.{1,}$/ ; 
 let CURRENT_PRODUCT;
-
 if(ID_REGEX.test(SEARCH)){
 
     let searchSplit = SEARCH.split("&");

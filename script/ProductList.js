@@ -1,4 +1,4 @@
-const PRODUCTS = {
+var PRODUCTS = {
     BACK_PACK : [
         {
             NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
@@ -805,4 +805,4 @@ const PRODUCTS = {
     ]
 }
 
-export default PRODUCTS
+
