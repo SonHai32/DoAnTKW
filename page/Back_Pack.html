@@ -14,6 +14,12 @@
         $('.sale-item>a>img')[i].setAttribute('src',BACK_PACK[i].IMG_URLS[0]);
         $('.sale-item-id')[i].innerHTML = BACK_PACK[i].NAME;
         $('.sale-item-price')[i].innerHTML = BACK_PACK[i].SALE ? BACK_PACK[i].SALE_PRICE : BACK_PACK[i].PRICE;
+        if(BACK_PACK[i].SALE){
+          let sale_label = document.createElement('div');
+          sale_label.setAttribute('class','sale-label');
+          sale_label.innerHTML = 'off'
+          $('.sale-item')[i].appendChild(sale_label)
+        }
       }
     })
   </script>
@@ -101,7 +107,7 @@
             </p>
             <p class="sale-item-add">
               Thêm vào giỏ hàng 
-            </p>  
+            </p>
           </div>
           
           <div class="sale-item flex flex-column space-between align-center">

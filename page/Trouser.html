@@ -21,7 +21,14 @@
         $('.sale-item>a>img')[i].setAttribute('src',TROUSER[i].IMG_URLS[0])
         $('.sale-item-id')[i].innerHTML = TROUSER[i].NAME
         $('.sale-item-price')[i].innerHTML = TROUSER[i].SALE ? TROUSER[i].SALE_PRICE : TROUSER[i].PRICE
-      }
+  
+        if(TROUSER[i].SALE){
+          let sale_label = document.createElement('div');
+          sale_label.setAttribute('class','sale-label');
+          sale_label.innerHTML = 'off'
+          $('.sale-item')[i].appendChild(sale_label)
+        }
+}
     })
   </script>
   <link rel="stylesheet" href="../style/style.css" type="text/css" >

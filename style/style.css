@@ -396,6 +396,8 @@ i{
     height: 50%;
 }
 .sale-item{
+    position: relative;
+    z-index: -999;
     width: 18%;
     height: 90%;
     border: 1px solid rgba(0,0,0,0.1);
@@ -600,8 +602,6 @@ font-size: 20px;
     padding-bottom: 20px;
 }
 
-
-
 .footer .footer-contents .product .product-items .item-sale .item-img{
     width: 80px;
     height: 80px;
@@ -645,6 +645,19 @@ font-size: 20px;
     color: #ff5959;
 }
 
-
-
+.sale-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #ff5959;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
 

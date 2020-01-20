@@ -14,6 +14,13 @@
         $('.sale-item>a>img')[i].setAttribute('src',PANTS[i].IMG_URLS[0]);
         $('.sale-item-id')[i].innerHTML = PANTS[i].NAME;
         $('.sale-item-price')[i].innerHTML = PANTS[i].SALE ? PANTS[i].SALE_PRICE : PANTS[i].PRICE;
+
+        if(PANTS[i].SALE){
+          let sale_label = document.createElement('div');
+          sale_label.setAttribute('class','sale-label');
+          sale_label.innerHTML = 'off'
+          $('.sale-item')[i].appendChild(sale_label)
+        }
       }
     })
   </script>
