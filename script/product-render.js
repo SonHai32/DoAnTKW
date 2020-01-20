@@ -65,11 +65,10 @@ if(ID_REGEX.test(SEARCH)){
                 $('.size-list-btn>button').on('click',(event) =>{
                     changeSize(event.target.id)
                 })
-
+                //set DEFAULT SIZE
+                changeSize(CURRENT_PRODUCT[0].SIZE[0])
             }
 
-
-            
             $('.main-product-img>img').attr('src',CURRENT_PRODUCT[0].IMG_URLS[0]);
             $('.product-img').on('click', (event) =>{
                 changeImage(event.target.getAttribute('key'))
