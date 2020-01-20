@@ -188,8 +188,8 @@ var PRODUCTS = {
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '400.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            SALE: true,
+            SALE_PRICE: '310.000đ',
             IMG_URLS: [
                 '../images/Products/Clothes/T-shirt/bad-funky-1.webp', 
                 '../images/Products/Clothes/T-shirt/bad-funky-2.webp', 
@@ -233,8 +233,8 @@ var PRODUCTS = {
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '325.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            SALE: true,
+            SALE_PRICE: '300.000đ',
             IMG_URLS: [
                 '../images/Products/Clothes/T-shirt/cherry-blossom-1.webp', 
                 '../images/Products/Clothes/T-shirt/cherry-blossom-2.webp', 
@@ -263,8 +263,8 @@ var PRODUCTS = {
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '310.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            SALE: true,
+            SALE_PRICE: '250.000đ',
             IMG_URLS: [
                 '../images/Products/Clothes/T-shirt/rabbit-king-1.webp', 
                 '../images/Products/Clothes/T-shirt/rabbit-king-2.webp', 
@@ -293,8 +293,8 @@ var PRODUCTS = {
             TAG: 'TSHIRT',
             PRICE: '310.000đ',
             SIZE: ['S','M','L','XL'],
-            SALE: false,
-            SALE_PRICE: 0,
+            SALE: true,
+            SALE_PRICE: '250.000đ',
             IMG_URLS: [
                 '../images/Products/Clothes/T-shirt/rabit-show-1.webp', 
                 '../images/Products/Clothes/T-shirt/rabit-show-2.webp', 
