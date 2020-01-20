@@ -3,6 +3,7 @@ var PRODUCTS = {
         {
             NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
             ID: 'DG-01',
+            TAG: 'BACK_PACK',
             PRICE: '450.000đ',
             SALE: true,
             SALE_PRICE: '300.000đ',
@@ -17,6 +18,7 @@ var PRODUCTS = {
         {
             NAME: 'Degrey Backpack ss3 Hologram',
             ID: 'DG-02',
+            TAG: 'BACK_PACK',
             PRICE: '650.000đ',
             SALE: true,
             SALE_PRICE: '450.000đ',
@@ -31,6 +33,7 @@ var PRODUCTS = {
         {
             NAME: 'Degrey BackPack ss3',
             ID: 'DG-03',
+            TAG: 'BACK_PACK',
             PRICE: '450.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -45,6 +48,7 @@ var PRODUCTS = {
         {
             NAME: 'XOÀI CHUA BACKPACKS',
             ID: 'DG-04',
+            TAG: 'BACK_PACK',
             PRICE: '690.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -59,6 +63,7 @@ var PRODUCTS = {
         {
             NAME: 'Candy Land Backpack',
             ID: 'BHBP-01',
+            TAG: 'BACK_PACK',
             PRICE: '600.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -73,6 +78,7 @@ var PRODUCTS = {
         {
             NAME: 'DANGER BACKPACK',
             ID: 'BHBP-02',
+            TAG: 'BACK_PACK',
             PRICE: '500.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -87,6 +93,7 @@ var PRODUCTS = {
         {
             NAME: 'BW Backpack',
             ID: 'BHBP-03',
+            TAG: 'BACK_PACK',
             PRICE: '550.000đ',
             SALE: true,
             SALE_PRICE: '400.000đ',
@@ -101,6 +108,7 @@ var PRODUCTS = {
         {
             NAME: 'Fire V2 Backpack',
             ID: 'BHBP-04',
+            TAG: 'BACK_PACK',
             PRICE: '450.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -115,6 +123,7 @@ var PRODUCTS = {
         {
             NAME: 'INSIGHT BACKPACK',
             ID: 'BHBP-05',
+            TAG: 'BACK_PACK',
             PRICE: '500.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -129,6 +138,7 @@ var PRODUCTS = {
         {
             NAME: 'Hungry Backpack',
             ID: 'BHBP-06',
+            TAG: 'BACK_PACK',
             PRICE: '550.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -145,6 +155,7 @@ var PRODUCTS = {
         {
             NAME: 'ANGRY JUNGLE TEE',
             ID: 'BHTS-01',
+            TAG: 'TSHIRT',
             PRICE: '350.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -158,6 +169,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD DRUG TEE',
             ID: 'BHTS-02',
+            TAG: 'TSHIRT',
             PRICE: '350.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -171,6 +183,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD FUNKY',
             ID: 'BHTS-03',
+            TAG: 'TSHIRT',
             PRICE: '400.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -184,6 +197,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD PARADISE',
             ID: 'BHTS-04',
+            TAG: 'TSHIRT',
             PRICE: '315.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -197,6 +211,7 @@ var PRODUCTS = {
         {
             NAME: 'CANDY LAND TEE',
             ID: 'BHTS-05',
+            TAG: 'TSHIRT',
             PRICE: '315.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -210,6 +225,7 @@ var PRODUCTS = {
         {
             NAME: 'CHERRY BLOSSOM',
             ID: 'BHTS-06',
+            TAG: 'TSHIRT',
             PRICE: '325.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -223,6 +239,7 @@ var PRODUCTS = {
         {
             NAME: 'NO COLOUR TEE',
             ID: 'BHTS-07',
+            TAG: 'TSHIRT',
             PRICE: '325.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -236,6 +253,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT KING TEE',
             ID: 'BHTS-08',
+            TAG: 'TSHIRT',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -249,6 +267,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT HOMIE TEE',
             ID: 'BHTS-09',
+            TAG: 'TSHIRT',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -262,6 +281,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHOW TEE',
             ID: 'BHTS-10',
+            TAG: 'TSHIRT',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -277,6 +297,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD DRUG HOODIE',
             ID: 'BHHD-01',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -290,6 +311,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN HOODIE',
             ID: 'BHHD-02',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -303,6 +325,7 @@ var PRODUCTS = {
         {
             NAME: 'MULTI COLOUR HOODIE',
             ID: 'BHHD-03',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -316,6 +339,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT CLOUDY HOODIE',
             ID: 'BHHD-04',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -329,6 +353,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT GOD HOODIE',
             ID: 'BHHD-05',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -342,6 +367,7 @@ var PRODUCTS = {
         {
             NAME: 'TRIPPY COLOUR HOODIE',
             ID: 'BHHD-06',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -355,6 +381,7 @@ var PRODUCTS = {
         {
             NAME: 'DEGREY ROCKET HOODIE',
             ID: 'DGHD-01',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -368,6 +395,7 @@ var PRODUCTS = {
         {
             NAME: 'DEGREY ROCKET ZIP DEN HOODIE',
             ID: 'DGHD-02',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -381,6 +409,7 @@ var PRODUCTS = {
         {
             NAME: 'FAVORHOOD',
             ID: 'DGHD-03',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -394,6 +423,7 @@ var PRODUCTS = {
         {
             NAME: 'SAILOR MOON',
             ID: 'DGHD-04',
+            TAG: 'HOODIE',
             PRICE: '510.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -409,6 +439,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD LINE',
             ID: 'BHP-01',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -422,6 +453,7 @@ var PRODUCTS = {
         {
             NAME: 'BH CARGO',
             ID: 'BHP-02',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -435,6 +467,7 @@ var PRODUCTS = {
         {
             NAME: 'BH CARGO VÀNG',
             ID: 'BHP-03',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -448,6 +481,7 @@ var PRODUCTS = {
         {
             NAME: 'BH CARGO XÁM',
             ID: 'BHP-04',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -462,6 +496,7 @@ var PRODUCTS = {
         {
             NAME: 'BH LINE SWEATPANTS CAM',
             ID: 'BHP-05',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -475,6 +510,7 @@ var PRODUCTS = {
         {
             NAME: 'BH LINE SWEATPANTS ĐỎ',
             ID: 'BHP-06',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -488,6 +524,7 @@ var PRODUCTS = {
         {
             NAME: 'BH LINE SWEATPANTS NÂU',
             ID: 'BHP-07',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -501,6 +538,7 @@ var PRODUCTS = {
         {
             NAME: 'DC CARGO PANTS',
             ID: 'DCP-01',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -514,6 +552,7 @@ var PRODUCTS = {
         {
             NAME: 'DC SHINE PANTS',
             ID: 'DCP-02',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -527,6 +566,7 @@ var PRODUCTS = {
         {
             NAME: 'DC UNIFORM PANTS',
             ID: 'DCP-03',
+            TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -542,6 +582,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN SHORT',
             ID: 'BHS-01',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -555,6 +596,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN SHORT',
             ID: 'BHS-02',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -568,6 +610,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN SHORT',
             ID: 'BHS-03',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -581,6 +624,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD SHORT',
             ID: 'BHS-04',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -594,6 +638,7 @@ var PRODUCTS = {
         {
             NAME: 'FIRE SHORT',
             ID: 'BHS-05',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -607,6 +652,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT CAMO SHORT',
             ID: 'BHS-06',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -620,6 +666,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT CAMO SHORT',
             ID: 'BHS-07',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -633,6 +680,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHORT',
             ID: 'BHS-08',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -646,6 +694,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHORT',
             ID: 'BHS-09',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -659,6 +708,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHORT',
             ID: 'BHS-10',
+            TAG: 'SHORTS',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -674,6 +724,7 @@ var PRODUCTS = {
     SHOES: [
         {
             NAME: 'YM-01',
+            TAG: 'SHOES',
             ID: 'YM-01',
             PRICE: '310.000đ',
             SALE: false,
@@ -687,6 +738,7 @@ var PRODUCTS = {
         },
         {
             NAME: 'YM-02',
+            TAG: 'SHOES',
             ID: 'YM-02',
             PRICE: '310.000đ',
             SALE: false,
@@ -700,6 +752,7 @@ var PRODUCTS = {
         },
         {
             NAME: 'YM-03',
+            TAG: 'SHOES',
             ID: 'YM-03',
             PRICE: '310.000đ',
             SALE: false,
@@ -714,6 +767,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-04',
             ID: 'YM-04',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -727,6 +781,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-05',
             ID: 'YM-05',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -740,6 +795,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-06',
             ID: 'YM-06',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -753,6 +809,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-07',
             ID: 'YM-07',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -766,6 +823,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-08',
             ID: 'YM-08',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -779,6 +837,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-09',
             ID: 'YM-09',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,
@@ -792,6 +851,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-10',
             ID: 'YM-10',
+            TAG: 'SHOES',
             PRICE: '310.000đ',
             SALE: false,
             SALE_PRICE: 0,

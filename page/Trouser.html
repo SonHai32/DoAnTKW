@@ -8,19 +8,19 @@
   <script charset="utf-8" src='../script/ProductList.js'></script>
   <script charset="utf-8">
     $(document).ready(function(){
-      let CLOTHES = [];
+      let TROUSER = [];
       for(let i = 0 ; i < 10 ; i++){
         if(i%2 === 0){
-          CLOTHES.push(PRODUCTS.TSHIRT[i]);
+          TROUSER.push(PRODUCTS.SHORTS[i]);
         }else{
-          CLOTHES.push(PRODUCTS.HOODIE[i]);
+          TROUSER.push(PRODUCTS.PANTS[i]);
         }
       }
-      for(let i = 0 ; i < CLOTHES.length ; i++){
-        $('.sale-item>a')[i].setAttribute('href',"./product.html?tag="+CLOTHES[i].TAG+"&id="+CLOTHES[i].ID);
-        $('.sale-item>a>img')[i].setAttribute('src',CLOTHES[i].IMG_URLS[0]);
-        $('.sale-item-id')[i].innerHTML = CLOTHES[i].NAME;
-        $('.sale-item-price')[i].innerHTML = CLOTHES[i].SALE ? CLOTHES[i].SALE_PRICE : CLOTHES[i].PRICE;
+      for(let i = 0 ; i < TROUSER.length ; i++){
+        $('.sale-item>a')[i].setAttribute('href',"./product.html?tag="+TROUSER[i].TAG+"&id="+TROUSER[i].ID)
+        $('.sale-item>a>img')[i].setAttribute('src',TROUSER[i].IMG_URLS[0])
+        $('.sale-item-id')[i].innerHTML = TROUSER[i].NAME
+        $('.sale-item-price')[i].innerHTML = TROUSER[i].SALE ? TROUSER[i].SALE_PRICE : TROUSER[i].PRICE
       }
     })
   </script>
@@ -68,7 +68,7 @@
     <div class="main-container flex flex-row">
       <div class="menu-items flex flex-column">
         <h1>Menu</h1> 
-     
+        
 <div class="item item-ao flex flex-row space-between">
           <a href="./Clothes.html">Áo</a>
           <i class="fas fa-chevron-right"></i>
@@ -97,7 +97,7 @@
       </div> 
       <div class="sale-items">
         <div class="sale-header flex align-center">
-          <p>Áo</p>
+          <p>QUẦN</p>
         </div>
         <div class="sale-list-items flex flex-row space-between align-center">
           <div class="sale-item flex flex-column space-between align-center">
