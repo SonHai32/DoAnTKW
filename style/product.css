@@ -32,10 +32,16 @@
 .product-info{
     width: 30%;
 }
-
-.product-info h1{
+.product-price h1{
+    padding: 5px 0;
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+}
+.product-name{
     text-align: left;
     margin-right: 10px;
+    font-weight: bolder;
 }
 .product-size{
     margin: 20px 0;

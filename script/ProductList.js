@@ -842,9 +842,9 @@ var PRODUCTS = {
             ID: 'YM-06',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
-            PRICE: '310.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            PRICE: '720.000đ',
+            SALE: true,
+            SALE_PRICE: '520.000đ',
             IMG_URLS: [
                 '../images/Products/Shoes/YM-06-1.jpg', 
                 '../images/Products/Shoes/YM-06-2.jpg', 
@@ -857,7 +857,7 @@ var PRODUCTS = {
             ID: 'YM-07',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
-            PRICE: '310.000đ',
+            PRICE: '399.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
@@ -872,7 +872,7 @@ var PRODUCTS = {
             ID: 'YM-08',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
-            PRICE: '310.000đ',
+            PRICE: '250.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
@@ -887,7 +887,7 @@ var PRODUCTS = {
             ID: 'YM-09',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
-            PRICE: '310.000đ',
+            PRICE: '350.000đ',
             SALE: false,
             SALE_PRICE: 0,
             IMG_URLS: [
@@ -902,9 +902,9 @@ var PRODUCTS = {
             ID: 'YM-10',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
-            PRICE: '310.000đ',
-            SALE: false,
-            SALE_PRICE: 0,
+            PRICE: '510.000đ',
+            SALE: true,
+            SALE_PRICE: '410.000đ',
             IMG_URLS: [
                 '../images/Products/Shoes/YM-10-1.jpg', 
                 '../images/Products/Shoes/YM-10-2.jpg', 
