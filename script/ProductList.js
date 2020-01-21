@@ -4,6 +4,7 @@ var PRODUCTS = {
             NAME: 'GOLDEN ROCKET BACKPACKS - GRB',
             ID: 'DG-01',
             TAG: 'BACK_PACK',
+            VN_TAG: 'Balo',
             PRICE: '450.000đ',
             SALE: true,
             SALE_PRICE: '300.000đ',
@@ -18,6 +19,7 @@ var PRODUCTS = {
         {
             NAME: 'Degrey Backpack ss3 Hologram',
             ID: 'DG-02',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '650.000đ',
             SALE: true,
@@ -33,6 +35,7 @@ var PRODUCTS = {
         {
             NAME: 'Degrey BackPack ss3',
             ID: 'DG-03',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '450.000đ',
             SALE: false,
@@ -48,6 +51,7 @@ var PRODUCTS = {
         {
             NAME: 'XOÀI CHUA BACKPACKS',
             ID: 'DG-04',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '690.000đ',
             SALE: false,
@@ -63,6 +67,7 @@ var PRODUCTS = {
         {
             NAME: 'Candy Land Backpack',
             ID: 'BHBP-01',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '600.000đ',
             SALE: false,
@@ -78,6 +83,7 @@ var PRODUCTS = {
         {
             NAME: 'DANGER BACKPACK',
             ID: 'BHBP-02',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '500.000đ',
             SALE: false,
@@ -93,6 +99,7 @@ var PRODUCTS = {
         {
             NAME: 'BW Backpack',
             ID: 'BHBP-03',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '550.000đ',
             SALE: true,
@@ -108,6 +115,7 @@ var PRODUCTS = {
         {
             NAME: 'Fire V2 Backpack',
             ID: 'BHBP-04',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '450.000đ',
             SALE: false,
@@ -123,6 +131,7 @@ var PRODUCTS = {
         {
             NAME: 'INSIGHT BACKPACK',
             ID: 'BHBP-05',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '500.000đ',
             SALE: false,
@@ -138,6 +147,7 @@ var PRODUCTS = {
         {
             NAME: 'Hungry Backpack',
             ID: 'BHBP-06',
+            VN_TAG: 'Balo',
             TAG: 'BACK_PACK',
             PRICE: '550.000đ',
             SALE: false,
@@ -155,6 +165,7 @@ var PRODUCTS = {
         {
             NAME: 'ANGRY JUNGLE TEE',
             ID: 'BHTS-01',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '350.000đ',
@@ -170,6 +181,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD DRUG TEE',
             ID: 'BHTS-02',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '350.000đ',
@@ -185,6 +197,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD FUNKY',
             ID: 'BHTS-03',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '400.000đ',
@@ -200,6 +213,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD PARADISE',
             ID: 'BHTS-04',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             PRICE: '315.000đ',
             SIZE: ['S','M','L','XL'],
@@ -215,6 +229,7 @@ var PRODUCTS = {
         {
             NAME: 'CANDY LAND TEE',
             ID: 'BHTS-05',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '315.000đ',
@@ -230,6 +245,7 @@ var PRODUCTS = {
         {
             NAME: 'CHERRY BLOSSOM',
             ID: 'BHTS-06',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '325.000đ',
@@ -245,6 +261,7 @@ var PRODUCTS = {
         {
             NAME: 'NO COLOUR TEE',
             ID: 'BHTS-07',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '325.000đ',
@@ -260,6 +277,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT KING TEE',
             ID: 'BHTS-08',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             SIZE: ['S','M','L','XL'],
             PRICE: '310.000đ',
@@ -275,6 +293,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT HOMIE TEE',
             ID: 'BHTS-09',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             PRICE: '310.000đ',
             SIZE: ['S','M','L','XL'],
@@ -290,6 +309,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHOW TEE',
             ID: 'BHTS-10',
+            VN_TAG: 'Áo thun',
             TAG: 'TSHIRT',
             PRICE: '310.000đ',
             SIZE: ['S','M','L','XL'],
@@ -307,6 +327,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD DRUG HOODIE',
             ID: 'BHHD-01',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -322,6 +343,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN HOODIE',
             ID: 'BHHD-02',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -337,6 +359,7 @@ var PRODUCTS = {
         {
             NAME: 'MULTI COLOUR HOODIE',
             ID: 'BHHD-03',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             PRICE: '510.000đ',
             SIZE: ['S','M','L','XL'],
@@ -352,6 +375,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT CLOUDY HOODIE',
             ID: 'BHHD-04',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             PRICE: '510.000đ',
             SIZE: ['S','M','L','XL'],
@@ -367,6 +391,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT GOD HOODIE',
             ID: 'BHHD-05',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -382,6 +407,7 @@ var PRODUCTS = {
         {
             NAME: 'TRIPPY COLOUR HOODIE',
             ID: 'BHHD-06',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             PRICE: '510.000đ',
             SIZE: ['S','M','L','XL'],
@@ -397,6 +423,7 @@ var PRODUCTS = {
         {
             NAME: 'DEGREY ROCKET HOODIE',
             ID: 'DGHD-01',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -412,6 +439,7 @@ var PRODUCTS = {
         {
             NAME: 'DEGREY ROCKET ZIP DEN HOODIE',
             ID: 'DGHD-02',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -427,6 +455,7 @@ var PRODUCTS = {
         {
             NAME: 'FAVORHOOD',
             ID: 'DGHD-03',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -442,6 +471,7 @@ var PRODUCTS = {
         {
             NAME: 'SAILOR MOON',
             ID: 'DGHD-04',
+            VN_TAG: 'Áo khoác / Hoodie',
             TAG: 'HOODIE',
             SIZE: ['S','M','L','XL'],
             PRICE: '510.000đ',
@@ -460,6 +490,7 @@ var PRODUCTS = {
             NAME: 'BAD LINE',
             ID: 'BHP-01',
             TAG: 'PANTS',
+            VN_TAG: 'Quần dài',
             SIZE: ['S','M','L','XL'],
             PRICE: '410.000đ',
             SALE: false,
@@ -475,6 +506,7 @@ var PRODUCTS = {
             NAME: 'BH CARGO',
             ID: 'BHP-02',
             TAG: 'PANTS',
+            VN_TAG: 'Quần dài',
             SIZE: ['S','M','L','XL'],
             PRICE: '410.000đ',
             SALE: false,
@@ -490,6 +522,7 @@ var PRODUCTS = {
             NAME: 'BH CARGO VÀNG',
             ID: 'BHP-03',
             SIZE: ['S','M','L','XL'],
+            VN_TAG: 'Quần dài',
             TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
@@ -505,6 +538,7 @@ var PRODUCTS = {
             NAME: 'BH CARGO XÁM',
             ID: 'BHP-04',
             SIZE: ['S','M','L','XL'],
+            VN_TAG: 'Quần dài',
             TAG: 'PANTS',
             PRICE: '410.000đ',
             SALE: false,
@@ -520,6 +554,7 @@ var PRODUCTS = {
         {
             NAME: 'BH LINE SWEATPANTS CAM',
             ID: 'BHP-05',
+            VN_TAG: 'Quần dài',
             SIZE: ['S','M','L','XL'],
             TAG: 'PANTS',
             PRICE: '410.000đ',
@@ -535,6 +570,7 @@ var PRODUCTS = {
         {
             NAME: 'BH LINE SWEATPANTS ĐỎ',
             ID: 'BHP-06',
+            VN_TAG: 'Quần dài',
             SIZE: ['S','M','L','XL'],
             TAG: 'PANTS',
             PRICE: '410.000đ',
@@ -550,6 +586,7 @@ var PRODUCTS = {
         {
             NAME: 'BH LINE SWEATPANTS NÂU',
             ID: 'BHP-07',
+            VN_TAG: 'Quần dài',
             SIZE: ['S','M','L','XL'],
             TAG: 'PANTS',
             PRICE: '410.000đ',
@@ -565,6 +602,7 @@ var PRODUCTS = {
         {
             NAME: 'DC CARGO PANTS',
             ID: 'DCP-01',
+            VN_TAG: 'Quần dài',
             TAG: 'PANTS',
             SIZE: ['S','M','L','XL'],
             PRICE: '410.000đ',
@@ -580,6 +618,7 @@ var PRODUCTS = {
         {
             NAME: 'DC SHINE PANTS',
             ID: 'DCP-02',
+            VN_TAG: 'Quần dài',
             TAG: 'PANTS',
             SIZE: ['S','M','L','XL'],
             PRICE: '410.000đ',
@@ -595,6 +634,7 @@ var PRODUCTS = {
         {
             NAME: 'DC UNIFORM PANTS',
             ID: 'DCP-03',
+            VN_TAG: 'Quần dài',
             TAG: 'PANTS',
             PRICE: '410.000đ',
             SIZE: ['S','M','L','XL'],
@@ -612,6 +652,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN SHORT',
             ID: 'BHS-01',
+            VN_TAG: 'Quần sort / Quần ngắn',
             TAG: 'SHORTS',
             SIZE: ['S','M','L','XL'],
             PRICE: '310.000đ',
@@ -627,6 +668,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN SHORT',
             ID: 'BHS-02',
+            VN_TAG: 'Quần sort / Quần ngắn',
             TAG: 'SHORTS',
             SIZE: ['S','M','L','XL'],
             PRICE: '310.000đ',
@@ -642,6 +684,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD HUMAN SHORT',
             ID: 'BHS-03',
+            VN_TAG: 'Quần sort / Quần ngắn',
             TAG: 'SHORTS',
             SIZE: ['S','M','L','XL'],
             PRICE: '310.000đ',
@@ -657,6 +700,7 @@ var PRODUCTS = {
         {
             NAME: 'BAD SHORT',
             ID: 'BHS-04',
+            VN_TAG: 'Quần sort / Quần ngắn',
             TAG: 'SHORTS',
             SIZE: ['S','M','L','XL'],
             PRICE: '310.000đ',
@@ -672,6 +716,7 @@ var PRODUCTS = {
         {
             NAME: 'FIRE SHORT',
             ID: 'BHS-05',
+            VN_TAG: 'Quần sort / Quần ngắn',
             SIZE: ['S','M','L','XL'],
             TAG: 'SHORTS',
             PRICE: '310.000đ',
@@ -687,6 +732,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT CAMO SHORT',
             ID: 'BHS-06',
+            VN_TAG: 'Quần sort / Quần ngắn',
             SIZE: ['S','M','L','XL'],
             TAG: 'SHORTS',
             PRICE: '350.000đ',
@@ -702,6 +748,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT CAMO SHORT',
             ID: 'BHS-07',
+            VN_TAG: 'Quần sort / Quần ngắn',
             SIZE: ['S','M','L','XL'],
             TAG: 'SHORTS',
             PRICE: '350.000đ',
@@ -717,6 +764,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHORT',
             ID: 'BHS-08',
+            VN_TAG: 'Quần sort / Quần ngắn',
             SIZE: ['S','M','L','XL'],
             TAG: 'SHORTS',
             PRICE: '310.000đ',
@@ -732,6 +780,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHORT',
             ID: 'BHS-09',
+            VN_TAG: 'Quần sort / Quần ngắn',
             SIZE: ['S','M','L','XL'],
             TAG: 'SHORTS',
             PRICE: '410.000đ',
@@ -747,6 +796,7 @@ var PRODUCTS = {
         {
             NAME: 'RABBIT SHORT',
             ID: 'BHS-10',
+            VN_TAG: 'Quần sort / Quần ngắn',
             SIZE: ['S','M','L','XL'],
             TAG: 'SHORTS',
             PRICE: '310.000đ',
@@ -766,6 +816,7 @@ var PRODUCTS = {
             NAME: 'YM-01',
             TAG: 'SHOES',
             ID: 'YM-01',
+            VN_TAG: 'Giày',
             PRICE: '310.000đ',
             SIZE: ['38','39','43','44'],
             SALE: false,
@@ -780,6 +831,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-02',
             TAG: 'SHOES',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             ID: 'YM-02',
             PRICE: '400.000đ',
@@ -795,6 +847,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-03',
             TAG: 'SHOES',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             ID: 'YM-03',
             PRICE: '250.000đ',
@@ -810,6 +863,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-04',
             ID: 'YM-04',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
             PRICE: '250.000đ',
@@ -825,6 +879,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-05',
             ID: 'YM-05',
+            VN_TAG: 'Giày',
             TAG: 'SHOES',
             SIZE: ['38','39','43','44'],
             PRICE: '360.000đ',
@@ -840,6 +895,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-06',
             ID: 'YM-06',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
             PRICE: '720.000đ',
@@ -855,6 +911,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-07',
             ID: 'YM-07',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
             PRICE: '399.000đ',
@@ -870,6 +927,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-08',
             ID: 'YM-08',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
             PRICE: '250.000đ',
@@ -885,6 +943,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-09',
             ID: 'YM-09',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
             PRICE: '350.000đ',
@@ -900,6 +959,7 @@ var PRODUCTS = {
         {
             NAME: 'YM-10',
             ID: 'YM-10',
+            VN_TAG: 'Giày',
             SIZE: ['38','39','43','44'],
             TAG: 'SHOES',
             PRICE: '510.000đ',
