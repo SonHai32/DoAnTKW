@@ -109,8 +109,110 @@ br {
     left: 0;
     z-index: 1000;
 }
+.lock-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#000;
+    opacity: .9;
+    z-index: 9999;
+    transition: width .5s ease-in-out;
+}
 
+.lock-screen .search-bar{
+    display: none;
+    background: #fff;
+    width: 50%;
+    z-index: 9999999999;
+    height: 70px;
+    position: fixed;
+    left: 50%; 
+    transform: translate(-50%,80%);
+    transition: all .5s ease-in-out;
+}
 
+.lock-screen .close-search i{
+    position: absolute;
+    display: none;
+    top: 1%;
+    left: 97%;
+    color: #fff;
+    font-size: 60px;
+}
+
+.lock-screen .search-bar i{
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0,-50%)
+}
+
+.lock-screen .search-bar input{
+    font-size: 26px;
+    height: 100%;
+    width: 80%;
+    border: none;
+    outline: none;
+    z-index: 999999;
+    float: right;
+    margin: 0;
+    padding: 0
+}
+
+.lock-screen .search-bar .search-result{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    transition: height .6s ease-in-out;
+}
+
+.lock-screen .search-bar .search-result .notfound{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.lock-screen .search-bar .search-result .notfound h2{
+    color: #000;
+    z-index: 999999999;
+}
+.lock-screen .search-bar .search-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.search-list-item{
+    width: 80%;
+    height: 80px;
+}
+
+.search-list-item-img{
+    width: 48px;
+    height: 48px;
+}
+
+.search-list-item a{
+    color : #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.search-list-item a:hover{
+    color: #ff5959;
+}
+ 
 .nav{
     width: 40%
 }
