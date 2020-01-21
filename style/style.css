@@ -302,6 +302,7 @@ br {
     background : #000;
     position: sticky;
     top: 20%;
+    z-index: 999
 }
 h1{
     color: #fff;
@@ -338,6 +339,7 @@ i{
     display: none;
     margin: 0;
     list-style-position: outside;
+    z-index: 999;
 }
 .menu-items .item ul li
 {
@@ -397,11 +399,13 @@ i{
 }
 .sale-item{
     position: relative;
-    z-index: -999;
     width: 18%;
     height: 90%;
     border: 1px solid rgba(0,0,0,0.1);
 
+}
+.sale-item span {
+    text-align: center;
 }
 .sale-item a{
     text-align: center;
