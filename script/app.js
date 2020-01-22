@@ -1,4 +1,6 @@
 var COUNT_DATE = new Date("Mar 1, 2020 00:00:00").getTime();
+var CURRENT_LOCATION = window.location.href;
+
 
 function countdown(){
     let now = new Date().getTime();
@@ -92,9 +94,9 @@ $(document).ready(function(){
         products.forEach(product =>{
             $('.search-list').append(`<div class="search-list-item flex flex-row align-center">
               <div class="search-list-item-img">
-              <img class='img-fit'  src="${product.IMG_URLS[0].slice(1,product.IMG_URLS[0].length)}" alt=""/>
+              <img class='img-fit'  src="${CURRENT_LOCATION.includes('index.html')?product.IMG_URLS[0].slice(1,product.IMG_URLS[0].length) : product.IMG_URLS[0]}" alt=""/>
               </div>
-              <a href="./page/product.html?tag=${product.TAG}&id=${product.ID}">${product.NAME}</a>
+              <a href="${CURRENT_LOCATION.includes('index.html')?'.':'..'}/page/product.html?tag=${product.TAG}&id=${product.ID}">${product.NAME}</a>
             </div>
 `);
         }) 
