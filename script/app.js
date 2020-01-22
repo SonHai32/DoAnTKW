@@ -77,8 +77,9 @@ $(document).ready(function(){
             })
             $('.search-result').css('height','320px');
             if(searchProduct.length < 1){
-                $('.notfound').html('<h2>Không tìm thấy kết quả phù hợp</h2>');
                 $('.search-list').empty();
+                $('.search-list').html('<div class="notfound"></div>')
+                $('.notfound').html('<h2>Không tìm thấy kết quả phù hợp</h2>');
             }else{
                 $('.notfound').empty();
                 $('.search-list').empty();
@@ -102,14 +103,14 @@ $(document).ready(function(){
     function openSearchBar(){
         $('.lock-screen').css('width','100%'); 
         $('.lock-screen').css('height',$('body').height()+'px'); 
-        $('.search-bar').css('display','block')
         $('.close-search>i').css('display','block')
+        $('.search-bar>i').css('display','block')
         $('body').css('overflow','hidden')
     }
     function closeSearchBar(){
         $('.lock-screen').css('width','0'); 
-        $('.search-bar').css('display','none')
         $('.close-search>i').css('display','none')
+        $('.search-bar>i').css('display','none')
         $('body').css('overflow-y','scroll')
       }
     })

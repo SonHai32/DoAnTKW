@@ -110,7 +110,7 @@ br {
     z-index: 1000;
 }
 .lock-screen{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 0;
@@ -122,20 +122,17 @@ br {
 }
 
 .lock-screen .search-bar{
-    display: none;
     background: #fff;
     width: 50%;
-    z-index: 9999999999;
     height: 70px;
-    position: fixed;
+    position: relative;
     left: 50%; 
     transform: translate(-50%,80%);
-    transition: all .5s ease-in-out;
 }
 
 .lock-screen .close-search i{
-    position: absolute;
     display: none;
+    position: absolute;
     top: 1%;
     left: 97%;
     color: #fff;
@@ -143,12 +140,10 @@ br {
 }
 
 .lock-screen .search-bar i{
+    display: none;
     font-size: 40px;
     color: #000;
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translate(0,-50%)
+    width: 10%;
 }
 
 .lock-screen .search-bar input{
@@ -172,13 +167,13 @@ br {
     transition: height .6s ease-in-out;
 }
 
-.lock-screen .search-bar .search-result .notfound{
+.notfound{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%)
 }
-.lock-screen .search-bar .search-result .notfound h2{
+.notfound h2{
     color: #000;
     z-index: 999999999;
 }
@@ -200,6 +195,7 @@ br {
 .search-list-item-img{
     width: 48px;
     height: 48px;
+    margin-left: 70px;
 }
 
 .search-list-item a{
