@@ -30,8 +30,7 @@ setInterval(function(){
 },1000);
 
 $(document).ready(function(){
-    
-      console.log($("body").height())
+    if(!CURRENT_LOCATION.includes('product.html')){
       let SALE_PRODUCTS = [...PRODUCTS.BACK_PACK.filter( backPack =>{
         return backPack.SALE;
       }),...PRODUCTS.TSHIRT.filter(tshirt =>{
@@ -55,7 +54,8 @@ $(document).ready(function(){
         $('.sale-item')[i].appendChild(sale_label)
         
       }
-      
+    }
+     
         $("#search-icon").click(() =>{
             openSearchBar();
         })

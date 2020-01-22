@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>My Site</title>
-  <script src='../script/app.js' charset="utf-8"></script>
   <script src='../script/jquery-3.4.1.min.js'  charset="utf-8"></script>
+  <script src='../script/app.js' charset="utf-8"></script>
   <script charset="utf-8" src='../script/ProductList.js'></script>
   <script charset="utf-8">
     $(document).ready(function(){
@@ -34,10 +34,26 @@
     })
   </script>
   <link rel="stylesheet" href="../style/style.css" type="text/css" >
-  <script src="https://kit.fontawesome.com/cb9d22c56d.js" crossorigin="anonymous"></script>
+  <link href="../style/Font-Awsome/css/all.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
+    
+<div class="lock-screen">
+      <div class="search-container">
+        <div class="search-bar flex flex-row space-around align-center ">   
+          <i class="far fa-search"></i> 
+          <input type="text" name="" placeholder='Tìm kiếm' class="search-bar-input"/>  
+          <div class="search-list flex flex-column">
+            <div class="notfound">
+            </div>
+          </div>
+        </div>
+        <div class="close-search">
+          <i class="fal fa-times"></i>
+        </div>
+      </div>    
+    </div>
     <div class="header flex flex-row align-items space-between">
       <div class="logo">
         <span>
@@ -54,8 +70,8 @@
         </ul>
       </div>
       <div class="nav-items flex flex-row justify-center align-center">
-       <i class="fas fa-search"></i> 
-       <i class="far fa-user"></i>
+       <i class="far fa-search" id='search-icon'></i> 
+       <i class="fas fa-user"></i>
        <i class="fas fa-shopping-basket"></i>
       </div> 
     </div>
