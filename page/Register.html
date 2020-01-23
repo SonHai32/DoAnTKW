@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Đăng Ký</title>
-  <script src="../script/register.js"  charset="utf-8">
-    
-  </script>
+  <script src="../script/jquery-3.4.1.min.js" charset="utf-8"></script>
+  <script src="../script/ProductList.js"  charset="utf-8"></script>
+  <script src="../script/search.js"  charset="utf-8"></script> 
+  <script src="../script/register.js"  charset="utf-8"></script>
   <link rel="stylesheet" href="../style/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link href="../style/Font-Awsome/css/all.css" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
     
-
 <div class="lock-screen">
       <div class="search-container">
         <div class="search-bar flex flex-row space-around align-center ">   
@@ -43,36 +42,169 @@
           <li class='nav-item-gioi-thieu'><a href="">Giới thiệu</a></li>
         </ul>
       </div>
+      <div class="nav-items flex flex-row justify-center align-center">
+       <i class="far fa-search" id='search-icon'></i> 
+       <i class="fas fa-user"></i>
+       <i class="fas fa-shopping-basket"></i>
+      </div> 
     </div>
     <div class="main-container">
       <div class="register-form flex flex-column">
         <h1 class="register-title">Đăng ký</h1>
-        <p class="form-label">Họ và Tên</p>
-        <input class="input-form" onkeyup="nameChange()" id="name"  type="text"> 
-        <p class="form-label">Email</p>
-        <input class="input-form" onkeyup="emailChange()"  id='email'  type="email"> 
-        <p class="form-label">Số điện thoại</p>
-        <input class="input-form" type="number"> 
-        <p class="form-label">Mật khẩu</p>
-        <input class="input-form" type="password"> 
-        <p class="form-label">Nhập lại mật khẩu</p>
-        <input class="input-form" type="password"> 
-        <p class="form-label">Địa chỉ</p>
-        <input class="input-form" type="text"> 
-        <p class="form-label">Ngày sinh</p>
-        <input class="input-form" type="date" value="2000-01-01">
+        <div class="input-form">          
+          <p class="form-label">Họ và Tên</p>
+          <input  id="name"  type="text">
+        </div>
+        <div class="input-form">
+          <p class="form-label">Email</p>
+          <input  id='email'  type="email"> 
+        </div>
+        <div class="input-form">
+          <p class="form-label">Số điện thoại</p>
+          <input  id='phone'  type="number"> 
+        </div>
+        <div class="input-form">
+          <p class="form-label">Mật khẩu</p>
+          <input  id='pwd'  type="password"> 
+        </div>        
+        <div class="input-form">
+          <p class="form-label">Nhập lại mật khẩu</p>
+          <input  id='re-pwd'  type="password"> 
+        </div>
+        <div class="input-form">
+          <p class="form-label">Địa chỉ</p>
+          <input  id='add'  type="text"> 
+        </div>
+        <div class="input-form">
+          <p class="form-label">Ngày sinh</p>
+          <input  type="date" id='birth'  value="2000-01-01">
+        </div>
         <div class="gender-option flex flex-row space-between align-center">
           <p class="form-label">Giới tính</p>
-          <input type="radio" value="Nam" name="gender" checked>Nam</input>
-          <input type="radio" value="Nữ" name="gender">Nữ</input>
-          <input type="radio" value="Khác" name="gender">Khác</input>
+          Nam
+          <input type="radio" value="Nam" name="gender" checked></input>
+          Nữ
+          <input type="radio" value="Nữ" name="gender"></input>
+          Khác
+          <input type="radio" value="Khác" name="gender"></input>
         </div> 
           <div class="submit flex flex-column align-center">
             <button class='btn-submit'>Đăng ký</button> 
           </div>
       </div>
     </div>
-  </div>
   
+  
+  <div class="footer">
+      <div class="designed-info text-white flex flex-row justify-center">
+        <span>Designed by </span><strong><a class='text-white ' href="https://github.com/lamsonhai1379" target="_blank"> LamSonHai</a></strong>
+      </div>
+      <div class="overlay"></div>  
+      <div class="footer-contents flex flex-row space-around align-center">
+        <div class="site-slogan flex flex-column flex-start align-center">
+          <div class="logo">
+            <h1>Logo</h1>
+          </div>
+          <span class='introduce text-gray'>BAD HABITS
+Chúng tôi, những người trẻ đam mê văn hoá đường phố, những nét văn hoá mang đầy tính bụi bặm, dựa trên những cảm xúc mà chúng tôi cảm nhận được ở Sài Gòn này, chúng tôi muốn mang đến cho những khách hàng của chúng tôi những chiếc áo mang những graphic, những câu chuyện đường phố nhất có thể.
+Đối với chúng tôi, những chiếc áo thun không đơn thuần chỉ là để mặc, mà nó còn mang cả một câu chuyện mà chúng tôi muốn mang đến cho các khách hàng. </span>
+        </div>
+        <div class="product flex flex-column flex-start  ">
+          <div class="product-title">
+              <h1>Top sale</h1>
+          </div>
+            
+<div class="product-items flex flex-column v-padding space-between">
+            <div class="items flex flex-row">
+                
+<div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding ">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+              <div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding h-padding">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+            </div>    
+          </div>
+          <div class="product-items flex flex-column space-between">
+            <div class="items flex flex-row">
+                
+<div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding h-padding">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+              <div class="item-sale  flex flex-row ">
+                  <div class="item-img">
+                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                  </div>
+                  <div class="item-info flex flex-column v-padding h-padding">
+                   <div class="item-name text-white">
+                      <span>áo Hologram</span>
+                    </div>
+                    <div class="item-price line-through text-white">
+                        650.000đ 
+                    </div>
+                    <div class="item-price text-white">
+                        400.000đ
+                    </div>
+                  </div>    
+              </div>
+            </div>    
+          </div>
+        </div>
+        <div class="contact flex flex-column flex-start align-center">
+          <div class="contact-title">
+            <h1>Liên hệ</h1>
+          </div>
+          <div class="email">
+            <span class='text-white'>Email: </span>
+            <span class='text-white'>lamsonhai1379@gmail.com</span>
+          </div>
+          <div class="social">
+            <ul class="social-icon flex flex-row" > 
+              <li><a href="https://www.facebook.com/hai.lam.3726613" target='blank'><i class="fab fa-facebook-square text-gray"></i></a></li>
+              <li><a href="https://github.com/lamsonhai1379" target='blank'><i class="fab fa-github-square text-gray"></i></a></li>
+              <li><a href="https://www.instagram.com/hai.lam.3726613/" target='blank'><i class="fab fa-instagram text-gray"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

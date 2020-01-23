@@ -552,10 +552,10 @@ font-size: 20px;
 /*----------------------Register---------------------*/
 .register-form{
     width: 30%;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0);
 }
 .register-title{
     text-align: center;
@@ -567,6 +567,11 @@ font-size: 20px;
 }
 
 .input-form {
+    position: relative;
+    width: 100%;    
+}
+.input-form input {
+    width: 100%;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: .25rem;
     height: 35px;
@@ -574,7 +579,7 @@ font-size: 20px;
     font-size: 18px;
 }
 .gender-option{
-    width:55%;
+    width:100%;
 }
 
 .btn-submit{
@@ -595,13 +600,22 @@ font-size: 20px;
 }
 
 .error{
-    border: 1px solid rgba(214,0,0,0.8);
-    border-radius: .25rem;
-    height: 35px;
-    margin: 5px 0;
-    font-size: 18px;
+    background: #ff8cb1;
+    opacity: .7
 }
 
+.error-message{
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 16px;
+    border: 1px solid #ff8cb1;
+}
 
 /*----------------- Payment-and-delivery-----------------*/
 
