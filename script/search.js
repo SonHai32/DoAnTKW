@@ -4,6 +4,9 @@ $(document).ready(()=>{
         $("#search-icon").click(() =>{
             openSearchBar();
         })
+        $("#search-link").click(() =>{
+            openSearchBar();
+        })
         $(".close-search").click(() =>{
             closeSearchBar();
         })

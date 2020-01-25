@@ -4,16 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <title>My Site</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style/style.css" type="text/css">
   <link rel="stylesheet" href="../style/about-us.css" type="text/css" charset="utf-8">
   <link href="../style/Font-Awsome/css/all.css" rel="stylesheet">
-
+  <script src='../script/jquery-3.4.1.min.js' charset="utf-8"></script>
+  <script src='../script/ProductList.js' charset="utf-8"></script>
+  <script src='../script/search.js' charset="utf-8"></script>
 <body>
-  <div class="header flex flex-row align-items space-between">
-    <div class="lock-screen">
-
+  
+<div class="lock-screen">
+    <div class="search-container">
+      <div class="search-bar flex flex-row space-around align-center ">
+        <i class="far fa-search"></i>
+        <input type="text" name="" placeholder='Tìm kiếm' class="search-bar-input" />
+        <div class="search-list flex flex-column">
+          <div class="notfound">
+          </div>
+        </div>
+      </div>
+      <div class="close-search">
+        <i class="fal fa-times"></i>
+      </div>
     </div>
+  </div>
+  <div class="header flex flex-row align-items space-between">
     <div class="logo">
       <span>
         My Site
@@ -21,24 +35,23 @@
     </div>
     <div class="nav flex justify-center align-center">
       <ul class='list-items flex flex-row list-style-none space-around align-center'>
-        <li class='nav-item-trang-chu'><a href="../index.html">Trang chủ</a></li>
-        <li class='nav-item-san-pham'><a href="./all-product.html">Sản phẩm</a></li>
-        <li class='nav-item-khuyen-mai'><a href="">Khuyến mãi</a></li>
-        <li class='nav-item-lien-he'><a href="">Liên hệ</a></li>
-        <li class='nav-item-gioi-thieu'><a href="">Giới thiệu</a></li>
+          <li class='nav-item-trang-chu'><a href="../index.html">Trang chủ</a></li>
+          <li class='nav-item-san-pham'><a href="./all-product.html">Sản phẩm</a></li>
+          <li class='nav-item-khuyen-mai'><a href="./sale.html">Khuyến mãi</a></li>
+          <li class='nav-item-gioi-thieu'><a href="./about-us.html">Giới thiệu</a></li>
       </ul>
     </div>
     <div class="nav-items flex flex-row justify-center align-center">
-      <i class="fas fa-search"></i>
+      <i class="far fa-search" id='search-icon'></i>
       <i class="far fa-user"></i>
-      <i class="fas fa-shopping-basket"></i>
+      <i class="far fa-shopping-basket"></i>
     </div>
   </div>
   <div class="about-container flex flex-row align-center">
     <div class="site-category">
       <h2>DANH MỤC TRANG</h2>
       <div class="site-category-contents flex flex-column">
-        <a href='#'>Tìm kiếm</a>
+        <a href='#' id='search-link'>Tìm kiếm</a>
         <a href='./about-us.html'>Giới thiệu</a>
         <a href='./all-product.html'>Sản phẩm</a>
         <a href='./chinh-sach-doi-tra.html'>Chính sách đổi trả</a>
