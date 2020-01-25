@@ -6,8 +6,35 @@
   <link href="./style/Font-Awsome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css" type="text/css" >
   <script src='./script/jquery-3.4.1.min.js'  charset="utf-8"></script>
-  <script src='script/app.js' charset="utf-8"></script>
   <script charset="utf-8" src='./script/ProductList.js'></script>
+  <script charset="utf-8">
+    $(document).ready(function(){
+      let SALE_PRODUCTS = [...PRODUCTS.BACK_PACK.filter( backPack =>{
+        return backPack.SALE;
+      }),...PRODUCTS.TSHIRT.filter(tshirt =>{
+        return tshirt.SALE;
+      }),...PRODUCTS.SHOES.filter(shoes =>{
+        return shoes.SALE;
+      }),...PRODUCTS.HOODIE.filter(hoodie =>{
+        return hoodie.SALE;
+      }),...PRODUCTS.PANTS.filter(pant =>{
+        return pant.SALE;
+      })];
+      for(let i = 0 ; i < SALE_PRODUCTS.length ; i++){
+        $('.sale-item>a')[i].setAttribute('href',"./page/product.html?tag="+SALE_PRODUCTS[i].TAG+"&id="+SALE_PRODUCTS[i].ID);
+        $('.sale-item>a>img')[i].setAttribute('src',SALE_PRODUCTS[i].IMG_URLS[0].slice(1,SALE_PRODUCTS[i].IMG_URLS[0].length));
+        $('.sale-item-id')[i].innerHTML = SALE_PRODUCTS[i].NAME;
+        $('.sale-item-price')[i].innerHTML = SALE_PRODUCTS[i].SALE_PRICE
+        
+        let sale_label = document.createElement('div');
+        sale_label.setAttribute('class','sale-label');
+        sale_label.innerHTML = 'off'
+        $('.sale-item')[i].appendChild(sale_label)
+        
+      }
+     
+    })
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -34,16 +61,17 @@
       </div>
       <div class="nav flex justify-center align-center">
         <ul class='list-items flex flex-row list-style-none space-around align-center'>
-          <li class='nav-item-trang-chu'><a href="">Trang chủ</a></li>
-          <li class='nav-item-san-pham'><a href="">Sản phẩm</a></li>
-          <li class='nav-item-khuyen-mai'><a href="">Khuyến mãi</a></li>
-          <li class='nav-item-lien-he'><a href="">Liên hệ</a></li>
+          <li class='nav-item-trang-chu'><a href="./index.html">Trang chủ</a></li>
+          <li class='nav-item-san-pham'><a href="./page/sale.html">Sản phẩm</a></li>
+          <li class='nav-item-khuyen-mai'><a href="./page/sale.html">Khuyến mãi</a></li>
           <li class='nav-item-gioi-thieu'><a href="">Giới thiệu</a></li>
         </ul>
       </div>
       <div class="nav-items flex flex-row justify-center align-center">
        <i class="far fa-search" id='search-icon'></i> 
-       <i class="far fa-user"></i>
+       <a href="./page/Register.html">
+        <i class="far fa-user"></i>
+       </a>
        <i class="far fa-shopping-basket"></i>
       </div> 
     </div>
