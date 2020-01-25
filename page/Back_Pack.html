@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>My Site</title>
-  <script src='../script/jquery-3.4.1.min.js'  charset="utf-8"></script>
+  <script src='../script/jquery-3.4.1.min.js' charset="utf-8"></script>
   <script src='../script/app.js' charset="utf-8"></script>
   <script charset="utf-8" src='../script/ProductList.js'></script>
   <script charset="utf-8">
-    $(document).ready(function(){
+    $(document).ready(function () {
       let BACK_PACK = [...PRODUCTS.BACK_PACK];
-      for(let i = 0 ; i < BACK_PACK.length ; i++){
-        $('.sale-item>a')[i].setAttribute('href',"./product.html?tag="+BACK_PACK[i].TAG+"&id="+BACK_PACK[i].ID);
-        $('.sale-item>a>img')[i].setAttribute('src',BACK_PACK[i].IMG_URLS[0]);
+      for (let i = 0; i < BACK_PACK.length; i++) {
+        $('.sale-item>a')[i].setAttribute('href', "./product.html?tag=" + BACK_PACK[i].TAG + "&id=" + BACK_PACK[i].ID);
+        $('.sale-item>a>img')[i].setAttribute('src', BACK_PACK[i].IMG_URLS[0]);
         $('.sale-item-id')[i].innerHTML = BACK_PACK[i].NAME;
         $('.sale-item-price')[i].innerHTML = BACK_PACK[i].SALE ? BACK_PACK[i].SALE_PRICE : BACK_PACK[i].PRICE;
-        if(BACK_PACK[i].SALE){
+        if (BACK_PACK[i].SALE) {
           let sale_label = document.createElement('div');
-          sale_label.setAttribute('class','sale-label');
+          sale_label.setAttribute('class', 'sale-label');
           sale_label.innerHTML = 'off'
           $('.sale-item')[i].appendChild(sale_label)
         }
       }
     })
   </script>
-  <link rel="stylesheet" href="../style/style.css" type="text/css" >
+  <link rel="stylesheet" href="../style/style.css" type="text/css">
   <link href="../style/Font-Awsome/css/all.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="wrapper">
 
-  <div class="lock-screen">
+    <div class="lock-screen">
       <div class="search-container">
-        <div class="search-bar flex flex-row space-around align-center ">   
-          <i class="far fa-search"></i> 
-          <input type="text" name="" placeholder='Tìm kiếm' class="search-bar-input"/>  
+        <div class="search-bar flex flex-row space-around align-center ">
+          <i class="far fa-search"></i>
+          <input type="text" name="" placeholder='Tìm kiếm' class="search-bar-input" />
           <div class="search-list flex flex-column">
             <div class="notfound">
             </div>
@@ -42,7 +44,7 @@
         <div class="close-search">
           <i class="fal fa-times"></i>
         </div>
-      </div>    
+      </div>
     </div>
     <div class="header flex flex-row align-items space-between">
       <div class="logo">
@@ -60,13 +62,13 @@
         </ul>
       </div>
       <div class="nav-items flex flex-row justify-center align-center">
-       <i class="far fa-search" id='search-icon'></i> 
-       <i class="fas fa-user"></i>
-       <i class="fas fa-shopping-basket"></i>
-      </div> 
+        <i class="far fa-search" id='search-icon'></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-basket"></i>
+      </div>
     </div>
     <div class="banner">
-    <div class="overlay"></div>
+      <div class="overlay"></div>
     </div>
     <div class="sale-content flex flex-column align-center">
       <div class="overlay"></div>
@@ -82,9 +84,9 @@
     </div>
     <div class="main-container flex flex-row">
       <div class="menu-items flex flex-column">
-        <h1>Menu</h1> 
+        <h1>Menu</h1>
 
-<div class="item item-ao flex flex-row space-between">
+        <div class="item item-ao flex flex-row space-between">
           <a href="./Clothes.html">Áo</a>
           <i class="fas fa-chevron-right"></i>
           <ul class='list-ao'>
@@ -104,12 +106,12 @@
           <a href="./Back_Pack.html">Balo</a>
         </div>
         <div class="item item-giay flex flex-row space-between">
-          <a href="./Shoes.html">Giày</a>  
+          <a href="./Shoes.html">Giày</a>
         </div>
         <div class="item flex flex-row space-between">
           <a href="./Sale.html">Khuyến mãi</a>
         </div>
-      </div> 
+      </div>
       <div class="sale-items">
         <div class="sale-header flex align-center">
           <p>BALO</p>
@@ -122,105 +124,114 @@
             <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
+              Thêm vào giỏ hàng
             </p>
           </div>
-          
+
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
           </div>
-          
+
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
           </div>
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
           </div>
           <div class="sale-item flex flex-column  space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
           </div>
         </div>
-     
-<div class="sale-list-items flex flex-row space-between align-center">
+
+        <div class="sale-list-items flex flex-row space-between align-center">
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
           </div>
-          
+
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
           </div>
-          
+
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
-          </div>
-          <div class="sale-item flex flex-column space-between align-center">
-            <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+              Thêm vào giỏ hàng
             </p>
-            <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
           </div>
           <div class="sale-item flex flex-column space-between align-center">
             <a href=""><img src="" alt=""></a>
-             <p class="sale-item-id">
-            </p><p class="sale-item-price">
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
             </p>
             <p class="sale-item-add">
-              Thêm vào giỏ hàng 
-            </p>  
+              Thêm vào giỏ hàng
+            </p>
+          </div>
+          <div class="sale-item flex flex-column space-between align-center">
+            <a href=""><img src="" alt=""></a>
+            <p class="sale-item-id">
+            </p>
+            <p class="sale-item-price">
+            </p>
+            <p class="sale-item-add">
+              Thêm vào giỏ hàng
+            </p>
           </div>
         </div>
-    </div>
+      </div>
     </div>
     <section class='payment-and-delivery flex flex-row justify-center'>
-     <div class="payment">
+      <div class="payment">
         <i class="fas fa-credit-card"></i>
         <div class="payment-content flex flex-column">
-          <p>Thanh toán trực tiếp nhanh chóng và an toàn </p> 
+          <p>Thanh toán trực tiếp nhanh chóng và an toàn </p>
           <p>với các đơn vị uy tín</p>
           <h2>Hình thức thanh toán</h2>
           <div class="payment-icon flex flex-row space-around">
@@ -230,106 +241,144 @@
             <i class="fab fa-cc-jcb"></i>
           </div>
         </div>
-     </div>
-     <div class="delivery">
+      </div>
+      <div class="delivery">
         <i class="fas fa-plane"></i>
         <div class="delivery-content">
-          <p>Chúng tôi hợp tác với các đối tác vận chuyển lớn trên toàn quốc như GHN Giaohangtietkiem Viettel Post VietNam Post.Chúng tôi cam kết việc giao hàng đúng với chất luọng và thời gian quy định</p>
+          <p>Chúng tôi hợp tác với các đối tác vận chuyển lớn trên toàn quốc như GHN Giaohangtietkiem Viettel Post
+            VietNam Post.Chúng tôi cam kết việc giao hàng đúng với chất luọng và thời gian quy định</p>
         </div>
-     </div>
+      </div>
     </section>
     <div class="footer">
       <div class="designed-info text-white flex flex-row justify-center">
-        <span>Designed by </span><strong><a class='text-white ' href="https://github.com/lamsonhai1379" target="_blank"> LamSonHai</a></strong>
+        <span>Designed by </span
+        ><strong
+          ><a
+            class="text-white "
+            href="https://github.com/lamsonhai1379"
+            target="_blank"
+          >
+            LamSonHai</a
+          ></strong
+        >
       </div>
-      <div class="overlay"></div>  
+      <div class="overlay"></div>
       <div class="footer-contents flex flex-row space-around align-center">
         <div class="site-slogan flex flex-column flex-start align-center">
           <div class="logo">
-            <h1>Logo</h1>
+            <h1>Ducky</h1>
           </div>
-          <span class='introduce text-gray'>BAD HABITS
-Chúng tôi, những người trẻ đam mê văn hoá đường phố, những nét văn hoá mang đầy tính bụi bặm, dựa trên những cảm xúc mà chúng tôi cảm nhận được ở Sài Gòn này, chúng tôi muốn mang đến cho những khách hàng của chúng tôi những chiếc áo mang những graphic, những câu chuyện đường phố nhất có thể.
-Đối với chúng tôi, những chiếc áo thun không đơn thuần chỉ là để mặc, mà nó còn mang cả một câu chuyện mà chúng tôi muốn mang đến cho các khách hàng. </span>
+          <span class="introduce text-gray">
+            Ducky Chúng tôi, những người trẻ đam mê văn hoá đường phố, những
+            nét văn hoá mang đầy tính bụi bặm, dựa trên những cảm xúc mà chúng
+            tôi cảm nhận được ở Sài Gòn này, chúng tôi muốn mang đến cho những
+            khách hàng của chúng tôi những chiếc áo mang những graphic, những
+            câu chuyện đường phố nhất có thể. Đối với chúng tôi, những chiếc
+            áo thun không đơn thuần chỉ là để mặc, mà nó còn mang cả một câu
+            chuyện mà chúng tôi muốn mang đến cho các khách hàng.
+          </span>
         </div>
         <div class="product flex flex-column flex-start  ">
           <div class="product-title">
-              <h1>Top sale</h1>
+            <h1>Top sale</h1>
           </div>
-            
-<div class="product-items flex flex-column v-padding space-between">
+
+          <div class="product-items flex flex-column v-padding space-between">
             <div class="items flex flex-row">
-                
-<div class="item-sale  flex flex-row ">
-                  <div class="item-img">
-                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+              <div class="item-sale  flex flex-row ">
+                <div class="item-img">
+                  <a href="./product.html?tag=TSHIRT&id=BHTS-03">
+                    <img
+                      class="img-fit"
+                      src="../images/Products/Clothes/T-shirt/bad-funky-1.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="item-info flex flex-column v-padding ">
+                  <div class="item-name text-white">
+                    <span>BAD FUNKY</span>
                   </div>
-                  <div class="item-info flex flex-column v-padding ">
-                   <div class="item-name text-white">
-                      <span>áo Hologram</span>
-                    </div>
-                    <div class="item-price line-through text-white">
-                        650.000đ 
-                    </div>
-                    <div class="item-price text-white">
-                        400.000đ
-                    </div>
-                  </div>    
+                  <div class="item-price line-through text-white">
+                    400.000đ
+                  </div>
+                  <div class="item-price text-white">
+                    310.000đ
+                  </div>
+                </div>
               </div>
               <div class="item-sale  flex flex-row ">
-                  <div class="item-img">
-                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                <div class="item-img">
+                  <a href="./product.html?tag=TSHIRT&id=BHTS-08">
+                    <img
+                      class="img-fit"
+                      src="../images/Products/Clothes/T-shirt/rabbit-king-1.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="item-info flex flex-column v-padding h-padding">
+                  <div class="item-name text-white">
+                    <span>RABBIT KING TEE</span>
                   </div>
-                  <div class="item-info flex flex-column v-padding h-padding">
-                   <div class="item-name text-white">
-                      <span>áo Hologram</span>
-                    </div>
-                    <div class="item-price line-through text-white">
-                        650.000đ 
-                    </div>
-                    <div class="item-price text-white">
-                        400.000đ
-                    </div>
-                  </div>    
+                  <div class="item-price line-through text-white">
+                    310.000đ
+                  </div>
+                  <div class="item-price text-white">
+                    250.000đ
+                  </div>
+                </div>
               </div>
-            </div>    
+            </div>
           </div>
           <div class="product-items flex flex-column space-between">
             <div class="items flex flex-row">
-                
-<div class="item-sale  flex flex-row ">
-                  <div class="item-img">
-                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+              <div class="item-sale  flex flex-row ">
+                <div class="item-img">
+                  <a href="./product.html?tag=BACK_PACK&id=BHBP-03">
+                    <img
+                      class="img-fit"
+                      src="../images/Products/Backpack/dau-lau-trang-den.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="item-info flex flex-column v-padding h-padding">
+                  <div class="item-name text-white">
+                    <span>BW Backpack</span>
                   </div>
-                  <div class="item-info flex flex-column v-padding h-padding">
-                   <div class="item-name text-white">
-                      <span>áo Hologram</span>
-                    </div>
-                    <div class="item-price line-through text-white">
-                        650.000đ 
-                    </div>
-                    <div class="item-price text-white">
-                        400.000đ
-                    </div>
-                  </div>    
+                  <div class="item-price line-through text-white">
+                    550.000đ
+                  </div>
+                  <div class="item-price text-white">
+                    400.000đ
+                  </div>
+                </div>
               </div>
               <div class="item-sale  flex flex-row ">
-                  <div class="item-img">
-                    <img class='img-fit' src="./images/ao/03_tee_b_1_2c6d911039d248e8847d0cf71ed694b5.png" alt=""/>
+                <div class="item-img">
+                  <a href="./product.html?tag=BACK_PACK&id=DG-02">
+                    <img
+                      class="img-fit"
+                      src="../images/Products/Backpack/DG-holo-1.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="item-info flex flex-column v-padding h-padding">
+                  <div class="item-name text-white">
+                    <span>Backpack Hologram</span>
                   </div>
-                  <div class="item-info flex flex-column v-padding h-padding">
-                   <div class="item-name text-white">
-                      <span>áo Hologram</span>
-                    </div>
-                    <div class="item-price line-through text-white">
-                        650.000đ 
-                    </div>
-                    <div class="item-price text-white">
-                        400.000đ
-                    </div>
-                  </div>    
+                  <div class="item-price line-through text-white">
+                    650.000đ
+                  </div>
+                  <div class="item-price text-white">
+                    450.000đ
+                  </div>
+                </div>
               </div>
-            </div>    
+            </div>
           </div>
         </div>
         <div class="contact flex flex-column flex-start align-center">
@@ -337,14 +386,30 @@ Chúng tôi, những người trẻ đam mê văn hoá đường phố, những 
             <h1>Liên hệ</h1>
           </div>
           <div class="email">
-            <span class='text-white'>Email: </span>
-            <span class='text-white'>lamsonhai1379@gmail.com</span>
+            <span class="text-white">Email: </span>
+            <span class="text-white">lamsonhai1379@gmail.com</span>
           </div>
           <div class="social">
-            <ul class="social-icon flex flex-row" > 
-              <li><a href="https://www.facebook.com/hai.lam.3726613" target='blank'><i class="fab fa-facebook-square text-gray"></i></a></li>
-              <li><a href="https://github.com/lamsonhai1379" target='blank'><i class="fab fa-github-square text-gray"></i></a></li>
-              <li><a href="https://www.instagram.com/hai.lam.3726613/" target='blank'><i class="fab fa-instagram text-gray"></i></a></li>
+            <ul class="social-icon flex flex-row">
+              <li>
+                <a
+                  href="https://www.facebook.com/hai.lam.3726613"
+                  target="blank"
+                  ><i class="fab fa-facebook-square text-gray"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/lamsonhai1379" target="blank"
+                  ><i class="fab fa-github-square text-gray"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/hai.lam.3726613/"
+                  target="blank"
+                  ><i class="fab fa-instagram text-gray"></i
+                ></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -352,4 +417,5 @@ Chúng tôi, những người trẻ đam mê văn hoá đường phố, những 
     </div>
   </div>
 </body>
+
 </html>
