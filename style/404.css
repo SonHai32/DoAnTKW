@@ -1,51 +1,50 @@
-.error-404{
-    padding-top: 150px;
-    width: 100%;
-    height: 85vh;
-    background-image: url('../images/background/404.svg');
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
+.error-404 {
+  padding-top: 150px;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../images/background/404.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-.footer{
-    margin-top: 0;
+.footer {
+  margin-top: 0;
 }
 
-.error-404 h1:nth-child(1){
-    position: absolute;
-    top: 25%;
-    left: 65%;
-    color: rgb(140,150,160)
+.error-404 h1:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  color: rgb(140, 150, 160);
 }
-.error-404 h1:nth-child(3){
-    position: absolute;
-    top: 30%;
-    left: 65%;
-    color: rgb(140,150,160)
-}
-
-.back-to-home a{
-    color: #fff;
+.error-404 h1:nth-child(3) {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  color: rgb(140, 150, 160);
 }
 
-.back-to-home:hover{
-    background: #116e00;
+.back-to-home a {
+  color: #fff;
 }
-.back-to-home{
-    width: 150px;
-    height: 30px;
-    border: none;
-    outline: none;
-    background: #1aa300;
-    padding: 8px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 65%;
-    cursor: pointer;
+
+.back-to-home:hover {
+  background: #116e00;
+}
+.back-to-home {
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #1aa300;
+  padding: 8px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  cursor: pointer;
 }

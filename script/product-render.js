@@ -1,110 +1,106 @@
 const SEARCH = window.location.search.substring(1);
-const ID_REGEX = /tag\=.{1,}\&id\=.{1,}$/ ; 
+const ID_REGEX = /tag\=.{1,}\&id\=.{1,}$/;
 let CURRENT_PRODUCT;
-if(ID_REGEX.test(SEARCH)){
+if (ID_REGEX.test(SEARCH)) {
+  let searchSplit = SEARCH.split("&");
+  let tag = searchSplit[0].split("=")[searchSplit[0].split("=").length - 1];
+  let ID = searchSplit[1].split("=")[searchSplit[1].split("=").length - 1];
+  switch (tag) {
+    case "BACK_PACK":
+      CURRENT_PRODUCT = PRODUCTS.BACK_PACK.filter(function(item) {
+        return item.ID === ID;
+      });
+      break;
+    case "TSHIRT":
+      CURRENT_PRODUCT = PRODUCTS.TSHIRT.filter(function(item) {
+        return item.ID === ID;
+      });
+      break;
+    case "HOODIE":
+      CURRENT_PRODUCT = PRODUCTS.HOODIE.filter(function(item) {
+        return item.ID === ID;
+      });
+      break;
+    case "PANTS":
+      CURRENT_PRODUCT = PRODUCTS.PANTS.filter(function(item) {
+        return item.ID === ID;
+      });
+      break;
+    case "SHORTS":
+      CURRENT_PRODUCT = PRODUCTS.SHORTS.filter(function(item) {
+        return item.ID === ID;
+      });
+      break;
+    case "SHOES":
+      CURRENT_PRODUCT = PRODUCTS.SHOES.filter(function(item) {
+        return item.ID === ID;
+      });
+      break;
+    default:
+      window.location.href = "../page/404.html";
+      break;
+  }
 
-    let searchSplit = SEARCH.split("&");
-    let tag = searchSplit[0].split('=')[searchSplit[0].split('=').length-1];
-    let ID = searchSplit[1].split('=')[searchSplit[1].split('=').length-1];
-    switch(tag){
-        case "BACK_PACK":
-            CURRENT_PRODUCT = PRODUCTS.BACK_PACK.filter(function(item){
-                return item.ID === ID;
-            });
-            break;
-        case "TSHIRT":
-            CURRENT_PRODUCT = PRODUCTS.TSHIRT.filter(function(item){
-                return item.ID === ID;
-            })
-            break;
-        case "HOODIE":
-            CURRENT_PRODUCT = PRODUCTS.HOODIE.filter(function(item){
-                return item.ID === ID;
-            })
-            break;
-        case "PANTS":
-            CURRENT_PRODUCT = PRODUCTS.PANTS.filter(function(item){
-                return item.ID === ID;
-            })
-            break;
-        case "SHORTS":
-            CURRENT_PRODUCT = PRODUCTS.SHORTS.filter(function(item){
-                return item.ID === ID;
-            })
-            break;
-        case "SHOES":
-            CURRENT_PRODUCT = PRODUCTS.SHOES.filter(function(item){
-                return item.ID === ID;
-            })
-            break;
-        default:
-            window.location.href = "../page/404.html"
-            break;
+  $(document).ready(() => {
+    if (CURRENT_PRODUCT.length > 0) {
+      $(".product-name").append(CURRENT_PRODUCT[0].NAME);
+      if (CURRENT_PRODUCT[0].SALE) {
+        $("#product-sale-price").append(CURRENT_PRODUCT[0].PRICE);
+        $("#product-price").append(CURRENT_PRODUCT[0].SALE_PRICE);
+      } else {
+        $("#product-price").append(CURRENT_PRODUCT[0].PRICE);
+      }
 
-    } 
+      if (CURRENT_PRODUCT[0].SIZE === undefined) {
+        $(".product-size").hide();
+      } else {
+        CURRENT_PRODUCT[0].SIZE.forEach(function(size) {
+          $(".size-list-btn").append(`<button id=${size} >${size}</button>`);
+        });
 
+        $(".size-list-btn>button").on("click", event => {
+          changeSize(event.target.id);
+        });
+        //set DEFAULT SIZE
+        changeSize(CURRENT_PRODUCT[0].SIZE[0]);
+      }
 
-    $(document).ready( ()=> {
-        if(CURRENT_PRODUCT.length > 0){
-            $(".product-name").append(CURRENT_PRODUCT[0].NAME)
-            if(CURRENT_PRODUCT[0].SALE){
-                $("#product-sale-price").append(CURRENT_PRODUCT[0].PRICE);
-                $("#product-price").append(CURRENT_PRODUCT[0].SALE_PRICE);
-            }else{
-                $("#product-price").append(CURRENT_PRODUCT[0].PRICE);
-            }
+      $(".main-product-img>img").attr("src", CURRENT_PRODUCT[0].IMG_URLS[0]);
+      $(".product-img").on("click", event => {
+        changeImage(event.target.getAttribute("key"));
+      });
 
+      for (let i = 0; i < 5; i++) {
+        $(".product-img>img")[i].setAttribute(
+          "src",
+          CURRENT_PRODUCT[0].IMG_URLS[i]
+        );
+      }
+    } else {
+      window.location.href = "../page/404.html";
+    }
+  });
+} else {
+  window.location.href = "../page/404.html";
+}
 
-            if(CURRENT_PRODUCT[0].SIZE === undefined){
-                $(".product-size").hide();
-            }else{
-                CURRENT_PRODUCT[0].SIZE.forEach(function(size){
-                    $(".size-list-btn").append(`<button id=${size} >${size}</button>`);
-                })
+function changeImage(index) {
+  $(document).ready(() => {
+    $(".main-product-img>img").attr("src", CURRENT_PRODUCT[0].IMG_URLS[index]);
+  });
+}
 
-                $('.size-list-btn>button').on('click',(event) =>{
-                    changeSize(event.target.id)
-                })
-                //set DEFAULT SIZE
-                changeSize(CURRENT_PRODUCT[0].SIZE[0])
-            }
-
-            $('.main-product-img>img').attr('src',CURRENT_PRODUCT[0].IMG_URLS[0]);
-            $('.product-img').on('click', (event) =>{
-                changeImage(event.target.getAttribute('key'))
-            })
-
-            for(let i = 0 ; i < 5 ; i++){
-                $(".product-img>img")[i].setAttribute("src",CURRENT_PRODUCT[0].IMG_URLS[i]); 
-            }
-        }else{
-            window.location.href = "../page/404.html"
-        }
+function changeSize(size) {
+  $(document).ready(() => {
+    $(`#${size}`).css("background", "red");
+    let anotherSize = CURRENT_PRODUCT[0].SIZE.filter(SIZE => {
+      return SIZE != size;
     });
-}else{
-    window.location.href = "../page/404.html"
+    anotherSize.forEach(size => {
+      $(`#${size}`).css("background", "#fff");
+    });
+  });
 }
-
-function changeImage(index){
-    $(document).ready(() =>{
-        $('.main-product-img>img').attr('src',CURRENT_PRODUCT[0].IMG_URLS[index]);
-    })
-}
-
-function changeSize(size){
-    $(document).ready(() =>{
-        $(`#${size}`).css("background","red")
-        let anotherSize = CURRENT_PRODUCT[0].SIZE.filter(SIZE =>{
-            return SIZE != size;
-        })
-        anotherSize.forEach(size =>{
-            $(`#${size}`).css("background","#fff");
-        })
-    })
-}
-
-    
-
 
 /*
 const href = document.location.href;
