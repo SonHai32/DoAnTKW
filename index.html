@@ -9,6 +9,7 @@
   <script charset="utf-8" src='./script/ProductList.js'></script>
   <script charset="utf-8" src='./script/search.js'></script> 
   <script charset="utf-8" src='./script/countdown.js'></script>
+  <script charset="utf-8" src='./script/banner.js'></script>
   <script charset="utf-8">
     $(document).ready(function(){
       let SALE_PRODUCTS = [...PRODUCTS.BACK_PACK.filter( backPack =>{
@@ -78,21 +79,14 @@
       </div> 
     </div>
     <div class="banner">
-    <div class="overlay"></div>
-    </div>
-    <div class="sale-content flex flex-column align-center">
-      <div class="overlay"></div>
-      <div class="sale-title">
-        <h1>Thời gian khuyến mãi kết thúc vào</h1>
+      <div class="switch-banner prev-banner">
+        <i class="fal fa-chevron-left"></i>
       </div>
-      <div class="countdown flex flex-row justify-center">
-        <div id="day"></div>
-        <div id="hour"></div>
-        <div id="minute"></div>
-        <div id="second"></div>
+      <div class="switch-banner next-banner">
+        <i class="fal fa-chevron-right"></i>
       </div>
     </div>
-    <div class="main-container flex flex-row">
+        <div class="main-container flex flex-row">
       <div class="menu-items flex flex-column">
         <h1>Menu</h1> 
         <div class="item item-ao flex flex-row space-between">

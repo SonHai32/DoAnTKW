@@ -7,7 +7,7 @@
   <script src='../script/jquery-3.4.1.min.js' charset="utf-8"></script>
   <script charset="utf-8" src='../script/ProductList.js'></script>
   <script src='../script/search.js' charset="utf-8"></script>
-  <script charset="utf-8" src='../script/countdown.js'></script>
+  <script src='../script/banner.js' charset="utf-8"></script>
   <script charset="utf-8">
     $(document).ready(function () {
       let PANTS = [...PRODUCTS.PANTS];
@@ -69,7 +69,12 @@
       </div>
     </div>
     <div class="banner">
-      <div class="overlay"></div>
+      <div class="switch-banner prev-banner">
+        <i class="fal fa-chevron-left"></i>
+      </div>
+      <div class="switch-banner next-banner">
+        <i class="fal fa-chevron-right"></i>
+      </div>
     </div>
     <div class="sale-content flex flex-column align-center">
       <div class="overlay"></div>
