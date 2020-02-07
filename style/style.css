@@ -113,6 +113,7 @@ br {
 .header .logo{
     width: 200px;
     height: 100%;
+
 }
 .lock-screen{
     position: fixed;
