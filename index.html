@@ -11,7 +11,9 @@
   <script charset="utf-8" src='./script/countdown.js'></script>
   <script charset="utf-8" src='./script/banner.js'></script>
   <script charset="utf-8">
+    // Dùng để Display Các sản phầm ra trang web
     $(document).ready(function(){
+      //Lấy các sản phẩm giảm giá từ ProductList
       let SALE_PRODUCTS = [...PRODUCTS.BACK_PACK.filter( backPack =>{
         return backPack.SALE;
       }),...PRODUCTS.TSHIRT.filter(tshirt =>{
@@ -24,15 +26,18 @@
         return pant.SALE;
       })];
       for(let i = 0 ; i < SALE_PRODUCTS.length ; i++){
+        //display các sản phẩm giảm giá
         $('.sale-item>a')[i].setAttribute('href',"./page/product.html?tag="+SALE_PRODUCTS[i].TAG+"&id="+SALE_PRODUCTS[i].ID);
         $('.sale-item>a>img')[i].setAttribute('src',SALE_PRODUCTS[i].IMG_URLS[0].slice(1,SALE_PRODUCTS[i].IMG_URLS[0].length));
         $('.sale-item-id')[i].innerHTML = SALE_PRODUCTS[i].NAME;
         $('.sale-item-price')[i].innerHTML = SALE_PRODUCTS[i].SALE_PRICE
         
+        //Gắn nhãn giảm giá 
         let sale_label = document.createElement('div');
         sale_label.setAttribute('class','sale-label');
         sale_label.innerHTML = 'off'
         $('.sale-item')[i].appendChild(sale_label)
+        
         
       }
      
@@ -57,10 +62,8 @@
       </div>    
     </div>
     <div class="header flex flex-row align-items space-between">
-      <div class="logo">
-        <span>
-          My Site
-        </span>
+      <div class="logo flex align-center justify-center">
+        <img src="./images/logo.png" alt="logo">
       </div>
       <div class="nav flex justify-center align-center">
         <ul class='list-items flex flex-row list-style-none space-around align-center'>
@@ -86,6 +89,7 @@
         <i class="fal fa-chevron-right"></i>
       </div>
     </div>
+    <!-- Editable Region -->
         <div class="main-container flex flex-row">
       <div class="menu-items flex flex-column">
         <h1>Menu</h1> 
@@ -250,7 +254,7 @@
       <div class="footer-contents flex flex-row space-around align-center">
         <div class="site-slogan flex flex-column flex-start align-center">
           <div class="logo">
-            <h1>Ducky</h1>
+            <img src="./images/logo.png" alt="">
           </div>
           <span class='introduce text-gray'>
   Ducky Chúng tôi, những người trẻ đam mê văn hoá đường phố, những nét văn hoá mang đầy tính bụi bặm, dựa trên những cảm xúc mà chúng tôi cảm nhận được ở Sài Gòn này, chúng tôi muốn mang đến cho những khách hàng của chúng tôi những chiếc áo mang những graphic, những câu chuyện đường phố nhất có thể. Đối với chúng tôi, những chiếc áo thun không đơn thuần chỉ là để mặc, mà nó còn mang cả một câu chuyện mà chúng tôi muốn mang đến cho các khách hàng.

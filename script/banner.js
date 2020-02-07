@@ -1,7 +1,7 @@
 const BANNERS = [
-  { URL: "./images/banner/Sale-Banner.svg", LINK: "sale.html" },
+  { URL: "./images/banner/sale.png", LINK: "sale.html" },
   {
-    URL: "./images/banner/new-backpack-banner.svg",
+    URL: "./images/banner/new-backpack.png",
     LINK: "product.html?tag=BACK_PACK&id=BHBP-06"
   }
 ];

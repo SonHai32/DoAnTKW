@@ -109,6 +109,10 @@ br {
     left: 0;
     z-index: 1000;
 }
+.header .logo{
+    width: 200px;
+    height: 100%;
+}
 .lock-screen{
     position: fixed;
     top: 0;
@@ -682,8 +686,12 @@ font-size: 20px;
     height: 100%;
 }
 
-.footer .footer-contents .site-slogan .logo ,.footer .footer-contents .product-title, .footer .footer-contents .contact-title{
+.footer .footer-contents .site-slogan ,.footer .footer-contents .product-title, .footer .footer-contents .contact-title{
     padding-bottom: 20px;
+}
+
+.footer .logo{
+    padding-top: 20px;
 }
 
 .footer .footer-contents .product .product-items .item-sale .item-img{
